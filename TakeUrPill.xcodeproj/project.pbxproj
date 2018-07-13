@@ -14,7 +14,7 @@
 		D99D5A8920F8851400E3966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8720F8851400E3966F /* Main.storyboard */; };
 		D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8A20F8851800E3966F /* Assets.xcassets */; };
 		D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */; };
-		D99D5A9920F8851800E3966F /* TakeUrPilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A9820F8851800E3966F /* TakeUrPilTests.swift */; };
+		D99D5A9920F8851800E3966F /* TakeUrPillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */; };
 		D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5AA320F896B800E3966F /* StartSessionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,15 +31,15 @@
 /* Begin PBXFileReference section */
 		D94DA97420F91C7000162D76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D94DA97620F91CB000162D76 /* LocalizableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableViews.swift; sourceTree = "<group>"; };
-		D99D5A8020F8851400E3966F /* TakeUrPil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeUrPil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99D5A8020F8851400E3966F /* TakeUrPill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeUrPill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A8320F8851400E3966F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99D5A8520F8851400E3966F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D99D5A8820F8851400E3966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99D5A8A20F8851800E3966F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99D5A8D20F8851800E3966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99D5A8F20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99D5A9420F8851800E3966F /* TakeUrPilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99D5A9820F8851800E3966F /* TakeUrPilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUrPilTests.swift; sourceTree = "<group>"; };
+		D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUrPillTests.swift; sourceTree = "<group>"; };
 		D99D5A9A20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99D5AA320F896B800E3966F /* StartSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +65,8 @@
 		D99D5A7720F8851400E3966F = {
 			isa = PBXGroup;
 			children = (
-				D99D5A8220F8851400E3966F /* TakeUrPil */,
-				D99D5A9720F8851800E3966F /* TakeUrPilTests */,
+				D99D5A8220F8851400E3966F /* TakeUrPill */,
+				D99D5A9720F8851800E3966F /* TakeUrPillTests */,
 				D99D5A8120F8851400E3966F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,13 +74,13 @@
 		D99D5A8120F8851400E3966F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D99D5A8020F8851400E3966F /* TakeUrPil.app */,
-				D99D5A9420F8851800E3966F /* TakeUrPilTests.xctest */,
+				D99D5A8020F8851400E3966F /* TakeUrPill.app */,
+				D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D99D5A8220F8851400E3966F /* TakeUrPil */ = {
+		D99D5A8220F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXGroup;
 			children = (
 				D99D5A8F20F8851800E3966F /* Info.plist */,
@@ -93,24 +93,24 @@
 				D94DA97520F91C7000162D76 /* Localizable.strings */,
 				D94DA97620F91CB000162D76 /* LocalizableViews.swift */,
 			);
-			path = TakeUrPil;
+			path = TakeUrPill;
 			sourceTree = "<group>";
 		};
-		D99D5A9720F8851800E3966F /* TakeUrPilTests */ = {
+		D99D5A9720F8851800E3966F /* TakeUrPillTests */ = {
 			isa = PBXGroup;
 			children = (
-				D99D5A9820F8851800E3966F /* TakeUrPilTests.swift */,
+				D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */,
 				D99D5A9A20F8851800E3966F /* Info.plist */,
 			);
-			path = TakeUrPilTests;
+			path = TakeUrPillTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D99D5A7F20F8851400E3966F /* TakeUrPil */ = {
+		D99D5A7F20F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D99D5A9D20F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPil" */;
+			buildConfigurationList = D99D5A9D20F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPill" */;
 			buildPhases = (
 				D99D5A7C20F8851400E3966F /* Sources */,
 				D99D5A7D20F8851400E3966F /* Frameworks */,
@@ -120,14 +120,14 @@
 			);
 			dependencies = (
 			);
-			name = TakeUrPil;
+			name = TakeUrPill;
 			productName = TakeUrPil;
-			productReference = D99D5A8020F8851400E3966F /* TakeUrPil.app */;
+			productReference = D99D5A8020F8851400E3966F /* TakeUrPill.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D99D5A9320F8851800E3966F /* TakeUrPilTests */ = {
+		D99D5A9320F8851800E3966F /* TakeUrPillTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D99D5AA020F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPilTests" */;
+			buildConfigurationList = D99D5AA020F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPillTests" */;
 			buildPhases = (
 				D99D5A9020F8851800E3966F /* Sources */,
 				D99D5A9120F8851800E3966F /* Frameworks */,
@@ -138,9 +138,9 @@
 			dependencies = (
 				D99D5A9620F8851800E3966F /* PBXTargetDependency */,
 			);
-			name = TakeUrPilTests;
+			name = TakeUrPillTests;
 			productName = TakeUrPilTests;
-			productReference = D99D5A9420F8851800E3966F /* TakeUrPilTests.xctest */;
+			productReference = D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D99D5A7B20F8851400E3966F /* Build configuration list for PBXProject "TakeUrPil" */;
+			buildConfigurationList = D99D5A7B20F8851400E3966F /* Build configuration list for PBXProject "TakeUrPill" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,8 +175,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D99D5A7F20F8851400E3966F /* TakeUrPil */,
-				D99D5A9320F8851800E3966F /* TakeUrPilTests */,
+				D99D5A7F20F8851400E3966F /* TakeUrPill */,
+				D99D5A9320F8851800E3966F /* TakeUrPillTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99D5A9920F8851800E3966F /* TakeUrPilTests.swift in Sources */,
+				D99D5A9920F8851800E3966F /* TakeUrPillTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +227,7 @@
 /* Begin PBXTargetDependency section */
 		D99D5A9620F8851800E3966F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D99D5A7F20F8851400E3966F /* TakeUrPil */;
+			target = D99D5A7F20F8851400E3966F /* TakeUrPill */;
 			targetProxy = D99D5A9520F8851800E3966F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -382,12 +382,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPil/Info.plist;
+				INFOPLIST_FILE = TakeUrPill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,12 +400,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPil/Info.plist;
+				INFOPLIST_FILE = TakeUrPill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +429,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPil.app/TakeUrPil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPill.app/TakeUrPill";
 			};
 			name = Debug;
 		};
@@ -450,14 +450,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPil.app/TakeUrPil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPill.app/TakeUrPill";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D99D5A7B20F8851400E3966F /* Build configuration list for PBXProject "TakeUrPil" */ = {
+		D99D5A7B20F8851400E3966F /* Build configuration list for PBXProject "TakeUrPill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D99D5A9B20F8851800E3966F /* Debug */,
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D99D5A9D20F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPil" */ = {
+		D99D5A9D20F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D99D5A9E20F8851800E3966F /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D99D5AA020F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPilTests" */ = {
+		D99D5AA020F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPillTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D99D5AA120F8851800E3966F /* Debug */,

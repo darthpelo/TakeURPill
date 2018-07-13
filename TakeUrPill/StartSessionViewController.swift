@@ -1,6 +1,6 @@
 //
 //  StartSessionViewController.swift
-//  TakeUrPil
+//  TakeUrPill
 //
 //  Created by Alessio Roberto on 13/07/2018.
 //  Copyright © 2018 Alessio Roberto. All rights reserved.
