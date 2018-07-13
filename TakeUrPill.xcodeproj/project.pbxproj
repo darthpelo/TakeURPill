@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		D94DA97320F91C7000162D76 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D94DA97520F91C7000162D76 /* Localizable.strings */; };
 		D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA97620F91CB000162D76 /* LocalizableViews.swift */; };
+		D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D94DA97E20F93BAF00162D76 /* Default-568h@2x.png */; };
+		D94DA98220F93C0B00162D76 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98120F93C0B00162D76 /* Model.swift */; };
+		D94DA98420F93CDD00162D76 /* PillModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98320F93CDD00162D76 /* PillModelTests.swift */; };
+		D94DA98620F947B200162D76 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98520F947B200162D76 /* StorageTests.swift */; };
+		D94DA98920F94D9800162D76 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98820F94D9800162D76 /* StorageService.swift */; };
 		D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8320F8851400E3966F /* AppDelegate.swift */; };
 		D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8520F8851400E3966F /* HomeViewController.swift */; };
 		D99D5A8920F8851400E3966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8720F8851400E3966F /* Main.storyboard */; };
 		D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8A20F8851800E3966F /* Assets.xcassets */; };
 		D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */; };
-		D99D5A9920F8851800E3966F /* TakeUrPillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */; };
 		D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5AA320F896B800E3966F /* StartSessionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,11 @@
 /* Begin PBXFileReference section */
 		D94DA97420F91C7000162D76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D94DA97620F91CB000162D76 /* LocalizableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableViews.swift; sourceTree = "<group>"; };
+		D94DA97E20F93BAF00162D76 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D94DA98120F93C0B00162D76 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D94DA98320F93CDD00162D76 /* PillModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillModelTests.swift; sourceTree = "<group>"; };
+		D94DA98520F947B200162D76 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		D94DA98820F94D9800162D76 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D99D5A8020F8851400E3966F /* TakeUrPill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeUrPill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A8320F8851400E3966F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99D5A8520F8851400E3966F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +48,6 @@
 		D99D5A8D20F8851800E3966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99D5A8F20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUrPillTests.swift; sourceTree = "<group>"; };
 		D99D5A9A20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99D5AA320F896B800E3966F /* StartSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,9 +106,26 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		D94DA98020F93C0000162D76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D94DA98120F93C0B00162D76 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D94DA98720F94D8B00162D76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D94DA98820F94D9800162D76 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D99D5A7720F8851400E3966F = {
 			isa = PBXGroup;
 			children = (
+				D94DA97E20F93BAF00162D76 /* Default-568h@2x.png */,
 				D99D5A8220F8851400E3966F /* TakeUrPill */,
 				D99D5A9720F8851800E3966F /* TakeUrPillTests */,
 				D99D5A8120F8851400E3966F /* Products */,
@@ -119,6 +144,8 @@
 		D99D5A8220F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXGroup;
 			children = (
+				D94DA98720F94D8B00162D76 /* Services */,
+				D94DA98020F93C0000162D76 /* Model */,
 				D99D5A8320F8851400E3966F /* AppDelegate.swift */,
 				D94DA97D20F93B4800162D76 /* Helper */,
 				D94DA97C20F93B3700162D76 /* Resources */,
@@ -131,8 +158,9 @@
 		D99D5A9720F8851800E3966F /* TakeUrPillTests */ = {
 			isa = PBXGroup;
 			children = (
-				D99D5A9820F8851800E3966F /* TakeUrPillTests.swift */,
 				D99D5A9A20F8851800E3966F /* Info.plist */,
+				D94DA98320F93CDD00162D76 /* PillModelTests.swift */,
+				D94DA98520F947B200162D76 /* StorageTests.swift */,
 			);
 			path = TakeUrPillTests;
 			sourceTree = "<group>";
@@ -221,6 +249,7 @@
 				D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */,
 				D94DA97320F91C7000162D76 /* Localizable.strings in Resources */,
 				D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */,
+				D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */,
 				D99D5A8920F8851400E3966F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94DA98220F93C0B00162D76 /* Model.swift in Sources */,
+				D94DA98920F94D9800162D76 /* StorageService.swift in Sources */,
 				D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */,
 				D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
@@ -250,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99D5A9920F8851800E3966F /* TakeUrPillTests.swift in Sources */,
+				D94DA98620F947B200162D76 /* StorageTests.swift in Sources */,
+				D94DA98420F93CDD00162D76 /* PillModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPill/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPill/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +483,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPilTests/Info.plist;
+				INFOPLIST_FILE = TakeUrPillTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +504,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
-				INFOPLIST_FILE = TakeUrPilTests/Info.plist;
+				INFOPLIST_FILE = TakeUrPillTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
