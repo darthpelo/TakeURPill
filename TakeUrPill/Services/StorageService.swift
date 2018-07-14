@@ -18,6 +18,7 @@ enum HistoryError: Error {
     case generic
     case write
     case read
+    case fileEmpty
 }
 
 final class Storage: StorageService {
@@ -50,11 +51,21 @@ final class Storage: StorageService {
             do {
                 return try Data(contentsOf: fileURL)
             } catch {
-                throw HistoryError.read
+                throw HistoryError.fileEmpty
             }
         }
 
         throw HistoryError.generic
+    }
+
+    func convertToPills(_ data: Data) -> [Pill]? {
+        let decoder = JSONDecoder()
+        return try? decoder.decode([Pill].self, from: data)
+    }
+
+    func convertToData(_ list: [Pill]) -> Data? {
+        let encoder = JSONEncoder()
+        return try? encoder.encode(list)
     }
 
     func deleteFiles() -> Bool {

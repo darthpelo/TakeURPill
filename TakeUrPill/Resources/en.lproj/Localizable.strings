@@ -8,7 +8,13 @@
 
 "home.button.takepill.title" = "Pill Took";
 "home.button.startsession.title" = "Start Session";
+"home.button.history.title" = "History";
 "home.title" = "Take Your Pill";
 
+"startSession.button.close.title" = "Close";
 "startSession.button.start.title" = "Start";
-"startSession.button.cancel.title" = "Cancel";
+"startSession.button.cancel.title" = "Stop";
+
+"history.button.close.title" = "Close";
+"history.button.erase.title" = "Erase";
+"history.title" = "History";

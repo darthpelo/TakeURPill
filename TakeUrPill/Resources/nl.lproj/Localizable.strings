@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TakeUrPill
+
+  Created by Alessio Roberto on 13/07/2018.
+  Copyright © 2018 Alessio Roberto. All rights reserved.
+*/
+
+"home.button.takepill.title" = "Pil nam het";
+"home.button.startsession.title" = "Begin met sessie";
+"home.button.history.title" = "Kroniek";
+"home.title" = "Neem je pil";
+
+"startSession.button.close.title" = "Sluiten";
+"startSession.button.start.title" = "Start";
+"startSession.button.cancel.title" = "Beëindig";
+
+"history.button.close.title" = "Sluiten";
+"history.button.erase.title" = "Verwijderen";
+"history.title" = "Kroniek";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,35 +12,53 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TakeUrPil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-79-EgV">
-                                <rect key="frame" x="60.5" y="269" width="199" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dFN-F0-ZJQ">
+                                <rect key="frame" x="88" y="377" width="199" height="68"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-pF-jV2" customClass="LocalisableUIButton" customModule="TakeUrPil" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-79-EgV">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-pF-jV2" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.button.startsession.title"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fuk-hV-7TH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNS-C6-dQX" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                                <rect key="frame" x="153" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.button.takepill.title"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="takePillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezp-MK-uSZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-Ih-Wlb" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="76.666666666666657" y="38" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.button.startsession.title"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.button.history.title"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fuk-hV-7TH"/>
+                                            <action selector="historyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxj-RD-S9Q"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNS-C6-dQX" customClass="LocalisableUIButton" customModule="TakeUrPil" customModuleProvider="target">
-                                        <rect key="frame" x="153" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.button.takepill.title"/>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT5-cG-Pm7" customClass="LocalisableUILabel" customModule="TakeUrPil" customModuleProvider="target">
-                                <rect key="frame" x="139" y="20" width="42" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT5-cG-Pm7" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
+                                <rect key="frame" x="166.66666666666666" y="44" width="41.666666666666657" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="lNR-Tb-Bqp"/>
                                 </constraints>
@@ -54,9 +72,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wX4-79-EgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bp0-VV-5hI"/>
+                            <constraint firstItem="dFN-F0-ZJQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="60l-1y-udf"/>
                             <constraint firstItem="aT5-cG-Pm7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lh8-YK-qv3"/>
-                            <constraint firstItem="wX4-79-EgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TCJ-Nz-i3n"/>
+                            <constraint firstItem="dFN-F0-ZJQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V9F-c9-fZh"/>
                             <constraint firstItem="aT5-cG-Pm7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hZH-lZ-0Hk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +83,7 @@
                         <outlet property="startButton" destination="bZS-pF-jV2" id="cTe-85-FmI"/>
                         <outlet property="takePillButton" destination="uNS-C6-dQX" id="dd5-is-If3"/>
                         <segue destination="XoZ-1h-3rd" kind="presentation" identifier="ShowStartSession" id="TOh-FZ-4AI"/>
+                        <segue destination="iMw-Hb-J4R" kind="presentation" identifier="ShowHistory" id="cKF-j4-29r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,18 +93,18 @@
         <!--Start Session View Controller-->
         <scene sceneID="Qwg-q9-AsC">
             <objects>
-                <viewController id="XoZ-1h-3rd" customClass="StartSessionViewController" customModule="TakeUrPil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XoZ-1h-3rd" customClass="StartSessionViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BiL-LC-rgu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="RS8-3b-Gzj">
-                                <rect key="frame" x="60" y="357" width="200" height="118"/>
+                                <rect key="frame" x="164.66666666666666" y="567" width="46" height="118"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-Bq-4lg" customClass="LocalisableUIButton" customModule="TakeUrPil" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-Bq-4lg" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="0fG-1s-Csf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="0fG-1s-Csf"/>
                                             <constraint firstAttribute="height" constant="44" id="MuS-ez-B55"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -93,8 +112,8 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.button.start.title"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-TU-r4m" customClass="LocalisableUIButton" customModule="TakeUrPil" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="78" width="200" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-TU-r4m" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="46" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7rZ-Lc-If8"/>
                                         </constraints>
@@ -103,78 +122,65 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.button.cancel.title"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="Cae-kd-4C8" kind="unwind" unwindAction="unwindToHomeViewControllerWithSegue:" id="0kv-jA-3PO"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOW-kc-mwn">
-                                <rect key="frame" x="16" y="104" width="288" height="10"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-Ps-RVe">
+                                <rect key="frame" x="0.0" y="144" width="375" height="154.66666666666663"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-Ps-RVe">
-                                        <rect key="frame" x="16" y="-72.5" width="256" height="155"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Gk-4Sf" customClass="LocalisableUILabel" customModule="TakeUrPil" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="0.0" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value=""/>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-9h-rNx">
-                                                <rect key="frame" x="16" y="38.5" width="224" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysQ-bx-Wvd" customClass="LocalisableUILabel" customModule="TakeUrPil" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="86.5" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="localisedKey" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-eo-yOg">
-                                                <rect key="frame" x="16" y="125" width="224" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="EgH-9h-rNx" secondAttribute="trailing" constant="16" id="6m9-2G-V8W"/>
-                                            <constraint firstAttribute="trailing" secondItem="QxD-eo-yOg" secondAttribute="trailing" constant="16" id="9z4-nZ-wLy"/>
-                                            <constraint firstItem="EgH-9h-rNx" firstAttribute="leading" secondItem="nTC-Ps-RVe" secondAttribute="leading" constant="16" id="UFg-4f-Ybj"/>
-                                            <constraint firstItem="QxD-eo-yOg" firstAttribute="leading" secondItem="nTC-Ps-RVe" secondAttribute="leading" constant="16" id="bZo-Kw-7Xe"/>
-                                        </constraints>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Gk-4Sf" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="166.66666666666666" y="0.0" width="41.666666666666657" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-9h-rNx">
+                                        <rect key="frame" x="16" y="38.333333333333343" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysQ-bx-Wvd" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="166.66666666666666" y="86.333333333333343" width="41.666666666666657" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-eo-yOg">
+                                        <rect key="frame" x="16" y="124.66666666666669" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="nTC-Ps-RVe" firstAttribute="centerX" secondItem="EOW-kc-mwn" secondAttribute="centerX" id="5oN-VZ-iDp"/>
-                                    <constraint firstAttribute="trailing" secondItem="nTC-Ps-RVe" secondAttribute="trailing" constant="16" id="Su1-qa-Fc7"/>
-                                    <constraint firstItem="nTC-Ps-RVe" firstAttribute="leading" secondItem="EOW-kc-mwn" secondAttribute="leading" constant="16" id="eOS-Fr-YVA"/>
-                                    <constraint firstItem="nTC-Ps-RVe" firstAttribute="centerY" secondItem="EOW-kc-mwn" secondAttribute="centerY" id="f8j-yp-Hxg"/>
+                                    <constraint firstAttribute="trailing" secondItem="EgH-9h-rNx" secondAttribute="trailing" constant="16" id="6m9-2G-V8W"/>
+                                    <constraint firstAttribute="trailing" secondItem="QxD-eo-yOg" secondAttribute="trailing" constant="16" id="9z4-nZ-wLy"/>
+                                    <constraint firstItem="EgH-9h-rNx" firstAttribute="leading" secondItem="nTC-Ps-RVe" secondAttribute="leading" constant="16" id="UFg-4f-Ybj"/>
+                                    <constraint firstItem="QxD-eo-yOg" firstAttribute="leading" secondItem="nTC-Ps-RVe" secondAttribute="leading" constant="16" id="bZo-Kw-7Xe"/>
                                 </constraints>
-                            </view>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R96-fw-G15" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                <rect key="frame" x="313" y="44" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.button.close.title"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Cae-kd-4C8" kind="unwind" unwindAction="unwindToHomeViewControllerWithSegue:" id="S8e-ff-2sl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="nTC-Ps-RVe" firstAttribute="width" secondItem="VNy-oL-2yc" secondAttribute="width" id="0bH-lz-TEh"/>
                             <constraint firstItem="RS8-3b-Gzj" firstAttribute="centerX" secondItem="VNy-oL-2yc" secondAttribute="centerX" id="0sg-ml-3G8"/>
                             <constraint firstItem="VNy-oL-2yc" firstAttribute="bottom" secondItem="RS8-3b-Gzj" secondAttribute="bottom" constant="93" id="IbB-UZ-uTo"/>
-                            <constraint firstItem="VNy-oL-2yc" firstAttribute="trailing" secondItem="EOW-kc-mwn" secondAttribute="trailing" constant="16" id="V3e-P4-BnJ"/>
-                            <constraint firstItem="EOW-kc-mwn" firstAttribute="leading" secondItem="VNy-oL-2yc" secondAttribute="leading" constant="16" id="Wns-o2-JtR"/>
-                            <constraint firstItem="EOW-kc-mwn" firstAttribute="top" secondItem="VNy-oL-2yc" secondAttribute="top" constant="84" id="aH6-cP-KOY"/>
-                            <constraint firstItem="RS8-3b-Gzj" firstAttribute="top" secondItem="EOW-kc-mwn" secondAttribute="bottom" constant="243" id="ehq-BA-z4h"/>
-                            <constraint firstItem="EOW-kc-mwn" firstAttribute="centerX" secondItem="BiL-LC-rgu" secondAttribute="centerX" id="oc8-ON-ywM"/>
+                            <constraint firstItem="R96-fw-G15" firstAttribute="trailing" secondItem="BiL-LC-rgu" secondAttribute="trailingMargin" id="SRO-3B-hfn"/>
+                            <constraint firstItem="nTC-Ps-RVe" firstAttribute="top" secondItem="VNy-oL-2yc" secondAttribute="top" constant="100" id="W77-6f-rXP"/>
+                            <constraint firstItem="R96-fw-G15" firstAttribute="top" secondItem="VNy-oL-2yc" secondAttribute="top" id="WCL-bC-SrX"/>
+                            <constraint firstItem="nTC-Ps-RVe" firstAttribute="centerX" secondItem="VNy-oL-2yc" secondAttribute="centerX" id="p2C-pJ-8HV"/>
+                            <constraint firstItem="R96-fw-G15" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VNy-oL-2yc" secondAttribute="leading" symbolic="YES" id="tSV-EI-fo9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VNy-oL-2yc"/>
                         <userDefinedRuntimeAttributes>
@@ -186,6 +192,103 @@
                 <exit id="Cae-kd-4C8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1105" y="35"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="ei4-v0-Qvx">
+            <objects>
+                <viewController id="iMw-Hb-J4R" customClass="HistoryViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VC5-c1-SCj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DWe-dO-4kD">
+                                <rect key="frame" x="16" y="73" width="343" height="705"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" textLabel="CbP-Vh-rDg" detailTextLabel="d36-cW-YEd" style="IBUITableViewCellStyleSubtitle" id="0Jy-iK-dTo">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Jy-iK-dTo" id="Nan-GF-iDp">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CbP-Vh-rDg">
+                                                    <rect key="frame" x="15" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d36-cW-YEd">
+                                                    <rect key="frame" x="14.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iMw-Hb-J4R" id="LEV-UH-C1n"/>
+                                    <outlet property="delegate" destination="iMw-Hb-J4R" id="c74-XT-1cy"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-Dh-lX8" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
+                                <rect key="frame" x="166.66666666666666" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="history.title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxS-hv-pCH" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                <rect key="frame" x="313" y="44" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="history.button.close.title"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="PIo-f3-1bd" kind="unwind" unwindAction="unwindToHomeViewControllerWithSegue:" id="16T-af-eQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-mZ-XRA" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="46" height="30"/>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="history.button.erase.title"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="eraseHistoryButtonPressed:" destination="iMw-Hb-J4R" eventType="touchUpInside" id="F77-Ir-YIU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RcU-mZ-XRA" firstAttribute="leading" secondItem="1WU-MT-Qzf" secondAttribute="leading" constant="16" id="6gn-3e-4Gm"/>
+                            <constraint firstItem="AxS-hv-pCH" firstAttribute="top" secondItem="1WU-MT-Qzf" secondAttribute="top" id="N9y-Ww-0T8"/>
+                            <constraint firstItem="DWe-dO-4kD" firstAttribute="leading" secondItem="1WU-MT-Qzf" secondAttribute="leading" constant="16" id="TDt-zA-gUo"/>
+                            <constraint firstItem="DWe-dO-4kD" firstAttribute="bottom" secondItem="1WU-MT-Qzf" secondAttribute="bottom" id="aub-it-omi"/>
+                            <constraint firstItem="DWe-dO-4kD" firstAttribute="top" secondItem="9ob-Dh-lX8" secondAttribute="bottom" constant="8" id="dND-l6-1TD"/>
+                            <constraint firstItem="1WU-MT-Qzf" firstAttribute="trailing" secondItem="AxS-hv-pCH" secondAttribute="trailing" constant="16" id="fu2-q9-NfY"/>
+                            <constraint firstItem="9ob-Dh-lX8" firstAttribute="centerX" secondItem="VC5-c1-SCj" secondAttribute="centerX" id="ncl-Vj-KUM"/>
+                            <constraint firstItem="RcU-mZ-XRA" firstAttribute="top" secondItem="1WU-MT-Qzf" secondAttribute="top" id="pcs-lC-mrw"/>
+                            <constraint firstItem="9ob-Dh-lX8" firstAttribute="top" secondItem="1WU-MT-Qzf" secondAttribute="top" id="qc7-Un-VgH"/>
+                            <constraint firstItem="1WU-MT-Qzf" firstAttribute="trailing" secondItem="DWe-dO-4kD" secondAttribute="trailing" constant="16" id="srZ-ow-n3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1WU-MT-Qzf"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="DWe-dO-4kD" id="Rbe-33-bog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3i-it-64L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PIo-f3-1bd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="800"/>
         </scene>
     </scenes>
 </document>
