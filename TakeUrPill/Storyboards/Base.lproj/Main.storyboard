@@ -268,9 +268,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RcU-mZ-XRA" firstAttribute="leading" secondItem="1WU-MT-Qzf" secondAttribute="leading" constant="16" id="6gn-3e-4Gm"/>
+                            <constraint firstItem="RcU-mZ-XRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1WU-MT-Qzf" secondAttribute="leading" symbolic="YES" id="6gn-3e-4Gm"/>
                             <constraint firstItem="AxS-hv-pCH" firstAttribute="top" secondItem="1WU-MT-Qzf" secondAttribute="top" id="N9y-Ww-0T8"/>
                             <constraint firstItem="DWe-dO-4kD" firstAttribute="leading" secondItem="1WU-MT-Qzf" secondAttribute="leading" constant="16" id="TDt-zA-gUo"/>
+                            <constraint firstItem="9ob-Dh-lX8" firstAttribute="leading" secondItem="RcU-mZ-XRA" secondAttribute="trailing" constant="104.66666666666666" id="X7c-oV-hrR"/>
+                            <constraint firstItem="AxS-hv-pCH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9ob-Dh-lX8" secondAttribute="trailing" constant="8" symbolic="YES" id="aWq-a6-Ipx"/>
                             <constraint firstItem="DWe-dO-4kD" firstAttribute="bottom" secondItem="1WU-MT-Qzf" secondAttribute="bottom" id="aub-it-omi"/>
                             <constraint firstItem="DWe-dO-4kD" firstAttribute="top" secondItem="9ob-Dh-lX8" secondAttribute="bottom" constant="8" id="dND-l6-1TD"/>
                             <constraint firstItem="1WU-MT-Qzf" firstAttribute="trailing" secondItem="AxS-hv-pCH" secondAttribute="trailing" constant="16" id="fu2-q9-NfY"/>
@@ -288,7 +290,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3i-it-64L" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="PIo-f3-1bd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="326" y="800"/>
+            <point key="canvasLocation" x="326" y="1091"/>
         </scene>
     </scenes>
 </document>

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Alessio Roberto. All rights reserved.
 //
 
+import Intents
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -13,9 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var takePillButton: UIButton!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        activitySetup()
     }
 
     @IBAction func startButtonPressed(_ sender: Any) {
@@ -46,6 +48,18 @@ extension HomeViewController {
                         ammount: 1,
                         name: pillName)
 
+        if #available(iOS 12.0, *) {
+            // Donate interaction to the system
+            let interaction = INInteraction(intent: pill.intent, response: nil)
+            print(pill.intent)
+
+            interaction.donate { (error) in
+                if let error = error {
+                    print(error)
+                }
+            }
+        }
+
         do {
             let json = try storage.readHistory()
             var list = storage.convertToPills(json)
@@ -67,5 +81,31 @@ extension HomeViewController {
         } catch {
             print("Read Error")
         }
+    }
+
+    private func activitySetup() {
+        // give our activity a unique ID
+        let activity = NSUserActivity(activityType: "com.mobiquityinc.demo.TakeUrPill.takepill")
+
+        // give it a title that will be displayed to users
+        activity.title = "I took my pill"
+
+        // allow Siri to index this and use it for voice-matched queries
+        activity.isEligibleForSearch = true
+        if #available(iOS 12.0, *) {
+            activity.isEligibleForPrediction = true
+        }
+
+        // give the activity a unique identifier so we can delete it later if we need to
+        if #available(iOS 12.0, *) {
+            activity.persistentIdentifier = NSUserActivityPersistentIdentifier("com.mobiquityinc.demo.TakeUrPill.takepill")
+        }
+
+        // You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri
+        activity.suggestedInvocationPhrase = "I took my pill"
+
+        // make this activity active for the current view controller – this is what Siri will restore when the activity is triggered
+        self.userActivity = activity
+
     }
 }

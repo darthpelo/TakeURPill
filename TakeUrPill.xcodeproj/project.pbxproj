@@ -15,6 +15,7 @@
 		D94DA98620F947B200162D76 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98520F947B200162D76 /* StorageTests.swift */; };
 		D94DA98920F94D9800162D76 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98820F94D9800162D76 /* StorageService.swift */; };
 		D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98A20F95FE300162D76 /* HistoryViewController.swift */; };
+		D94DA98F20FB4F9A00162D76 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */; };
 		D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8320F8851400E3966F /* AppDelegate.swift */; };
 		D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8520F8851400E3966F /* HomeViewController.swift */; };
 		D99D5A8920F8851400E3966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8720F8851400E3966F /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		D94DA98A20F95FE300162D76 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		D94DA98C20F9EEEC00162D76 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D94DA98D20F9EEF400162D76 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		D99D5A8020F8851400E3966F /* TakeUrPill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeUrPill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A8320F8851400E3966F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99D5A8520F8851400E3966F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				D99D5A8F20F8851800E3966F /* Info.plist */,
 				D99D5A8A20F8851800E3966F /* Assets.xcassets */,
 				D94DA97520F91C7000162D76 /* Localizable.strings */,
+				D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,9 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				D94DA97E20F93BAF00162D76 /* Default-568h@2x.png */,
+				D99D5A8120F8851400E3966F /* Products */,
 				D99D5A8220F8851400E3966F /* TakeUrPill */,
 				D99D5A9720F8851800E3966F /* TakeUrPillTests */,
-				D99D5A8120F8851400E3966F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,12 +152,12 @@
 		D99D5A8220F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXGroup;
 			children = (
-				D94DA98720F94D8B00162D76 /* Services */,
-				D94DA98020F93C0000162D76 /* Model */,
 				D99D5A8320F8851400E3966F /* AppDelegate.swift */,
 				D94DA97D20F93B4800162D76 /* Helper */,
+				D94DA98020F93C0000162D76 /* Model */,
 				D94DA97C20F93B3700162D76 /* Resources */,
 				D94DA97A20F93B0700162D76 /* Scenes */,
+				D94DA98720F94D8B00162D76 /* Services */,
 				D94DA97B20F93B2B00162D76 /* Storyboards */,
 			);
 			path = TakeUrPill;
@@ -281,6 +284,7 @@
 				D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
 				D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */,
+				D94DA98F20FB4F9A00162D76 /* Intents.intentdefinition in Sources */,
 				D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

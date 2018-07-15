@@ -22,3 +22,24 @@ extension Pill: Equatable {
                 lhs.name == rhs.name
     }
 }
+
+@available(iOS 12.0, *)
+extension Pill {
+    var intent: TakePillIntent {
+        let takePillIntent = TakePillIntent()
+        takePillIntent.ammount = self.ammount as NSNumber
+        takePillIntent.title = self.name
+        return takePillIntent
+    }
+
+    init?(from intent: TakePillIntent) {
+        guard let ammount = intent.ammount as? Int,
+            let name = intent.title else {
+                return nil
+        }
+
+        self.init(timestamp: Date().timeIntervalSince1970,
+                  ammount: ammount,
+                  name: name)
+    }
+}
