@@ -22,6 +22,11 @@
 		D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8A20F8851800E3966F /* Assets.xcassets */; };
 		D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */; };
 		D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5AA320F896B800E3966F /* StartSessionViewController.swift */; };
+		D9ACFCA320FB7F3400E400B3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ACFCA220FB7F3400E400B3 /* IntentHandler.swift */; };
+		D9ACFCA720FB7F3400E400B3 /* TakeURPillIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9ACFCA020FB7F3400E400B3 /* TakeURPillIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9ACFCAC20FB7F8500E400B3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		D9ACFCAE20FB801500E400B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98120F93C0B00162D76 /* Model.swift */; };
+		D9ACFCAF20FB801A00E400B3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98820F94D9800162D76 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,28 @@
 			remoteGlobalIDString = D99D5A7F20F8851400E3966F;
 			remoteInfo = TakeUrPil;
 		};
+		D9ACFCA520FB7F3400E400B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99D5A7820F8851400E3966F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9ACFC9F20FB7F3400E400B3;
+			remoteInfo = TakeURPillIntents;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9ACFCAB20FB7F3400E400B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9ACFCA720FB7F3400E400B3 /* TakeURPillIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D94DA97420F91C7000162D76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -56,6 +82,11 @@
 		D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A9A20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99D5AA320F896B800E3966F /* StartSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionViewController.swift; sourceTree = "<group>"; };
+		D9ACFCA020FB7F3400E400B3 /* TakeURPillIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TakeURPillIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9ACFCA220FB7F3400E400B3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D9ACFCA420FB7F3400E400B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9ACFCAD20FB7FB300E400B3 /* TakeURPillIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakeURPillIntents.entitlements; sourceTree = "<group>"; };
+		D9ACFCB020FB829A00E400B3 /* TakeUrPill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakeUrPill.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +98,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D99D5A9120F8851800E3966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9ACFC9D20FB7F3400E400B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,10 +136,10 @@
 		D94DA97C20F93B3700162D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D99D5A8F20F8851800E3966F /* Info.plist */,
 				D99D5A8A20F8851800E3966F /* Assets.xcassets */,
-				D94DA97520F91C7000162D76 /* Localizable.strings */,
+				D99D5A8F20F8851800E3966F /* Info.plist */,
 				D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */,
+				D94DA97520F91C7000162D76 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -136,6 +174,7 @@
 				D94DA97E20F93BAF00162D76 /* Default-568h@2x.png */,
 				D99D5A8120F8851400E3966F /* Products */,
 				D99D5A8220F8851400E3966F /* TakeUrPill */,
+				D9ACFCA120FB7F3400E400B3 /* TakeURPillIntents */,
 				D99D5A9720F8851800E3966F /* TakeUrPillTests */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +184,7 @@
 			children = (
 				D99D5A8020F8851400E3966F /* TakeUrPill.app */,
 				D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */,
+				D9ACFCA020FB7F3400E400B3 /* TakeURPillIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +192,7 @@
 		D99D5A8220F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXGroup;
 			children = (
+				D9ACFCB020FB829A00E400B3 /* TakeUrPill.entitlements */,
 				D99D5A8320F8851400E3966F /* AppDelegate.swift */,
 				D94DA97D20F93B4800162D76 /* Helper */,
 				D94DA98020F93C0000162D76 /* Model */,
@@ -173,6 +214,16 @@
 			path = TakeUrPillTests;
 			sourceTree = "<group>";
 		};
+		D9ACFCA120FB7F3400E400B3 /* TakeURPillIntents */ = {
+			isa = PBXGroup;
+			children = (
+				D9ACFCAD20FB7FB300E400B3 /* TakeURPillIntents.entitlements */,
+				D9ACFCA220FB7F3400E400B3 /* IntentHandler.swift */,
+				D9ACFCA420FB7F3400E400B3 /* Info.plist */,
+			);
+			path = TakeURPillIntents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,10 +234,12 @@
 				D99D5A7C20F8851400E3966F /* Sources */,
 				D99D5A7D20F8851400E3966F /* Frameworks */,
 				D99D5A7E20F8851400E3966F /* Resources */,
+				D9ACFCAB20FB7F3400E400B3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9ACFCA620FB7F3400E400B3 /* PBXTargetDependency */,
 			);
 			name = TakeUrPill;
 			productName = TakeUrPil;
@@ -211,6 +264,23 @@
 			productReference = D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D9ACFC9F20FB7F3400E400B3 /* TakeURPillIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9ACFCA820FB7F3400E400B3 /* Build configuration list for PBXNativeTarget "TakeURPillIntents" */;
+			buildPhases = (
+				D9ACFC9C20FB7F3400E400B3 /* Sources */,
+				D9ACFC9D20FB7F3400E400B3 /* Frameworks */,
+				D9ACFC9E20FB7F3400E400B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeURPillIntents;
+			productName = TakeURPillIntents;
+			productReference = D9ACFCA020FB7F3400E400B3 /* TakeURPillIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,10 +293,23 @@
 				TargetAttributes = {
 					D99D5A7F20F8851400E3966F = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D99D5A9320F8851800E3966F = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = D99D5A7F20F8851400E3966F;
+					};
+					D9ACFC9F20FB7F3400E400B3 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -247,6 +330,7 @@
 			targets = (
 				D99D5A7F20F8851400E3966F /* TakeUrPill */,
 				D99D5A9320F8851800E3966F /* TakeUrPillTests */,
+				D9ACFC9F20FB7F3400E400B3 /* TakeURPillIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +349,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D99D5A9220F8851800E3966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9ACFC9E20FB7F3400E400B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +389,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9ACFC9C20FB7F3400E400B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ACFCAE20FB801500E400B3 /* Model.swift in Sources */,
+				D9ACFCAF20FB801A00E400B3 /* StorageService.swift in Sources */,
+				D9ACFCAC20FB7F8500E400B3 /* Intents.intentdefinition in Sources */,
+				D9ACFCA320FB7F3400E400B3 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = D99D5A7F20F8851400E3966F /* TakeUrPill */;
 			targetProxy = D99D5A9520F8851800E3966F /* PBXContainerItemProxy */;
+		};
+		D9ACFCA620FB7F3400E400B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9ACFC9F20FB7F3400E400B3 /* TakeURPillIntents */;
+			targetProxy = D9ACFCA520FB7F3400E400B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,7 +566,9 @@
 		D99D5A9E20F8851800E3966F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TakeUrPill/TakeUrPill.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
 				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
@@ -477,7 +586,9 @@
 		D99D5A9F20F8851800E3966F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TakeUrPill/TakeUrPill.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWNSYN8YK;
 				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
@@ -534,6 +645,46 @@
 			};
 			name = Release;
 		};
+		D9ACFCA920FB7F3400E400B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TakeURPillIntents/TakeURPillIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFWNSYN8YK;
+				INFOPLIST_FILE = TakeURPillIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPill.TakeURPillIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9ACFCAA20FB7F3400E400B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TakeURPillIntents/TakeURPillIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFWNSYN8YK;
+				INFOPLIST_FILE = TakeURPillIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.demo.TakeUrPill.TakeURPillIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -560,6 +711,15 @@
 			buildConfigurations = (
 				D99D5AA120F8851800E3966F /* Debug */,
 				D99D5AA220F8851800E3966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9ACFCA820FB7F3400E400B3 /* Build configuration list for PBXNativeTarget "TakeURPillIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9ACFCA920FB7F3400E400B3 /* Debug */,
+				D9ACFCAA20FB7F3400E400B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

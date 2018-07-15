@@ -26,13 +26,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch userActivity.activityType {
         case "com.mobiquityinc.demo.TakeUrPill.takepill":
             print("com.mobiquityinc.demo.TakeUrPill.takepill")
+            return true
         case "TakePillIntent":
             if #available(iOS 12.0, *) {
                 guard let intent = userActivity.interaction?.intent as? TakePillIntent,
                     let model = Pill(from: intent) else {
                         return false
                 }
-                return store(model)
+                let storage = Storage()
+                return storage.store(model)
             } else {
                 return false
             }
@@ -40,35 +42,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         return false
-    }
-}
-
-extension AppDelegate {
-    func store(_ pill: Pill) -> Bool {
-        let storage = Storage()
-        do {
-            let json = try storage.readHistory()
-            var list = storage.convertToPills(json)
-
-            if list != nil {
-                list!.append(pill)
-                if let newJson = storage.convertToData(list!) {
-                    try storage.saveHistory(newJson)
-                }
-            }
-        } catch let error as HistoryError {
-            if error == .fileEmpty {
-                if let newJson = storage.convertToData([pill]) {
-                    try? storage.saveHistory(newJson)
-                }
-            } else {
-                print("\(error.localizedDescription)")
-                return false
-            }
-        } catch {
-            print("Read Error")
-            return false
-        }
-        return true
     }
 }

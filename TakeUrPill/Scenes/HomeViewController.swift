@@ -47,40 +47,7 @@ extension HomeViewController {
         let pill = Pill(timestamp: Date().timeIntervalSince1970,
                         ammount: 1,
                         name: pillName)
-
-        if #available(iOS 12.0, *) {
-            // Donate interaction to the system
-            let interaction = INInteraction(intent: pill.intent, response: nil)
-            print(pill.intent)
-
-            interaction.donate { (error) in
-                if let error = error {
-                    print(error)
-                }
-            }
-        }
-
-        do {
-            let json = try storage.readHistory()
-            var list = storage.convertToPills(json)
-
-            if list != nil {
-                list!.append(pill)
-                if let newJson = storage.convertToData(list!) {
-                    try storage.saveHistory(newJson)
-                }
-            }
-        } catch let error as HistoryError {
-            if error == .fileEmpty {
-                if let newJson = storage.convertToData([pill]) {
-                    try? storage.saveHistory(newJson)
-                }
-            } else {
-                print("\(error.localizedDescription)")
-            }
-        } catch {
-            print("Read Error")
-        }
+        storage.store(pill)
     }
 
     private func activitySetup() {
