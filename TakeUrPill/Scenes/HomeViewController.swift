@@ -42,10 +42,11 @@ extension HomeViewController {
     private func pillTook() {
         let storage = Storage()
 
-        let pillName = Bool.random() ? "Red Pill" : "Blue Pill"
+        let pillName = UserDefaults.standard.object(forKey: "pill.name") as? String
+        let ammount = UserDefaults.standard.integer(forKey: "pill.ammount")
 
         let pill = Pill(timestamp: Date().timeIntervalSince1970,
-                        ammount: 1,
+                        ammount: ammount,
                         name: pillName)
         storage.store(pill)
     }

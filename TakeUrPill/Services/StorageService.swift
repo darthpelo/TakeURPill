@@ -90,7 +90,7 @@ final class Storage: StorageService {
             // Donate interaction to the system
             let interaction = INInteraction(intent: pill.intent, response: nil)
             print(pill.intent)
-
+            pill.intent.suggestedInvocationPhrase = "I took \(pill.ammount) \(pill.name!) pill"
             interaction.donate { (error) in
                 if let error = error {
                     print(error)

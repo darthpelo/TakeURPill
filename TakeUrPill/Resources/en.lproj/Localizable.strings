@@ -14,6 +14,9 @@
 "startSession.button.close.title" = "Close";
 "startSession.button.start.title" = "Start";
 "startSession.button.cancel.title" = "Stop";
+"startSession.label.name.title" = "Pill's Name";
+"startSession.label.ammount.title" = "Number of pills";
+"startSession.button.save.title" = "Save";
 
 "history.button.close.title" = "Close";
 "history.button.erase.title" = "Erase";

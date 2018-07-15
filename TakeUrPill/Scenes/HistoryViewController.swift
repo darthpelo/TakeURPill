@@ -13,9 +13,23 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     private var list: [Pill] = []
+    private lazy var notification = NotificationCenter.default
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        notification.addObserver(self,
+                                 selector: #selector(reload),
+                                 name: UIApplication.willEnterForegroundNotification,
+                                 object: nil)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         list = getHistory().sorted {$0.timestamp > $1.timestamp }
+    }
+
+    deinit {
+        notification.removeObserver(self)
     }
 
     @IBAction func eraseHistoryButtonPressed(_ sender: Any) {
@@ -26,6 +40,11 @@ class HistoryViewController: UIViewController {
             list = getHistory().sorted {$0.timestamp > $1.timestamp }
             tableView.reloadData()
         }
+    }
+
+    @objc func reload() {
+        list = getHistory().sorted {$0.timestamp > $1.timestamp }
+        tableView.reloadData()
     }
 
 }
