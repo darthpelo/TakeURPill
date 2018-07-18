@@ -10,7 +10,7 @@ import Foundation
 import Intents
 
 protocol StorageService {
-    func saveHistory(_ data: Data) throws
+//    func saveHistory(_ data: Data) throws
     func readHistory() throws -> Data
     func deleteFiles() -> Bool
     func store(_ pill: Pill) -> Bool
@@ -30,7 +30,7 @@ final class Storage: StorageService {
         json = fileName
     }
 
-    func saveHistory(_ data: Data) throws {
+    private func saveHistory(_ data: Data) throws {
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             let fileURL = dir.appendingPathComponent(json)
@@ -89,8 +89,8 @@ final class Storage: StorageService {
         if #available(iOS 12.0, *) {
             // Donate interaction to the system
             let interaction = INInteraction(intent: pill.intent, response: nil)
-            print(pill.intent)
-            pill.intent.suggestedInvocationPhrase = "I took \(pill.ammount) \(pill.name!) pill"
+            logger(pill.intent)
+           
             interaction.donate { (error) in
                 if let error = error {
                     print(error)
@@ -114,11 +114,11 @@ final class Storage: StorageService {
                     try? saveHistory(newJson)
                 }
             } else {
-                print("\(error.localizedDescription)")
+                logger("\(error.localizedDescription)")
                 return false
             }
         } catch {
-            print("Read Error")
+            logger("Read Error")
             return false
         }
         return true

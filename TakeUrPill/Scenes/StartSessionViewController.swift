@@ -23,6 +23,13 @@ class StartSessionViewController: UIViewController {
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
+        guard let name = self.name else {
+            let alertView = UIAlertController(title: nil, message: "Name must be fill", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertView, animated: true, completion: nil)
+            return
+        }
+
         let userDefault = UserDefaults.standard
 
         userDefault.set(name, forKey: "pill.name")

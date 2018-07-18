@@ -25,10 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         switch userActivity.activityType {
         case "com.mobiquityinc.demo.TakeUrPill.takepill":
-            print("com.mobiquityinc.demo.TakeUrPill.takepill")
+            logger("com.mobiquityinc.demo.TakeUrPill.takepill")
             return true
         case "TakePillIntent":
             if #available(iOS 12.0, *) {
+                logger(userActivity.interaction?.intent)
                 guard let intent = userActivity.interaction?.intent as? TakePillIntent,
                     let model = Pill(from: intent) else {
                         return false

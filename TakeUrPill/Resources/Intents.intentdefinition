@@ -16,7 +16,9 @@
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>set</string>
+			<string>generic</string>
+			<key>INIntentDescription</key>
+			<string>Track the pill took by the user</string>
 			<key>INIntentDescriptionID</key>
 			<string>BDRh6Q</string>
 			<key>INIntentLastParameterTag</key>
@@ -25,21 +27,6 @@
 			<string>TakePill</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>ammount</key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>YndOrl</string>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<false/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>I took ${ammount} pill</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>T2MmVT</string>
-				</dict>
 				<key>ammount,title</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
@@ -49,26 +36,11 @@
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>2ls8xE</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<false/>
+					<true/>
 					<key>INIntentParameterCombinationTitle</key>
 					<string>I took ${ammount} ${title} pill</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>fAVimC</string>
-				</dict>
-				<key>title</key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>rX8Vkz</string>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<false/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>I took ${title} pill</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>s9WRqQ</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -139,7 +111,7 @@
 			<key>INIntentUserConfirmationRequired</key>
 			<true/>
 			<key>INIntentVerb</key>
-			<string>Set</string>
+			<string>Do</string>
 		</dict>
 	</array>
 </dict>
