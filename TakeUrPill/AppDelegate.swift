@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         case "TakePillIntent":
             if #available(iOS 12.0, *) {
-                logger(userActivity.interaction?.intent)
                 guard let intent = userActivity.interaction?.intent as? TakePillIntent,
                     let model = Pill(from: intent) else {
                         return false
