@@ -10,7 +10,7 @@ import Foundation
 import Intents
 
 protocol StorageService {
-//    func saveHistory(_ data: Data) throws
+    //    func saveHistory(_ data: Data) throws
     func readHistory() throws -> Data
     func deleteFiles() -> Bool
     func store(_ pill: Pill) -> Bool
@@ -25,57 +25,36 @@ enum HistoryError: Error {
 
 final class Storage: StorageService {
     private var json: String
-
+    
     init(_ fileName: String = "sessions.json") {
         json = fileName
     }
-
-    private func saveHistory(_ data: Data) throws {
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-
-            let fileURL = dir.appendingPathComponent(json)
-
-            //writing
-            do {
-                try data.write(to: fileURL, options: .atomic)
-            } catch {
-                throw HistoryError.write
-            }
-        }
-    }
-
+    
     func readHistory() throws -> Data {
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-
-            let fileURL = dir.appendingPathComponent(json)
-
-            //reading
-            do {
-                return try Data(contentsOf: fileURL)
-            } catch {
-                throw HistoryError.fileEmpty
-            }
+        if let userDefaults = UserDefaults.init(suiteName: "group.com.mobiquity.demo.TakeURPill"),
+            let history = userDefaults.userHistory {
+            return history
         }
-
-        throw HistoryError.generic
+        
+        throw HistoryError.fileEmpty
     }
-
+    
     func convertToPills(_ data: Data) -> [Pill]? {
         let decoder = JSONDecoder()
         return try? decoder.decode([Pill].self, from: data)
     }
-
+    
     func convertToData(_ list: [Pill]) -> Data? {
         let encoder = JSONEncoder()
         return try? encoder.encode(list)
     }
-
+    
     func deleteFiles() -> Bool {
         let fileManager = FileManager.default
         let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         do {
             let fileURLs = try fileManager.contentsOfDirectory(at: documentsURL, includingPropertiesForKeys: nil)
-
+            
             for fileURL in fileURLs {
                 try fileManager.removeItem(at: fileURL)
             }
@@ -84,13 +63,13 @@ final class Storage: StorageService {
             return false
         }
     }
-
+    
     func store(_ pill: Pill) -> Bool {
         if #available(iOS 12.0, *) {
             // Donate interaction to the system
             let interaction = INInteraction(intent: pill.intent, response: nil)
             logger(pill.intent)
-           
+            
             interaction.donate { (error) in
                 if let error = error {
                     print(error)
@@ -101,7 +80,7 @@ final class Storage: StorageService {
         do {
             let json = try readHistory()
             var list = convertToPills(json)
-
+            
             if list != nil {
                 list!.append(pill)
                 if let newJson = convertToData(list!) {
@@ -122,5 +101,13 @@ final class Storage: StorageService {
             return false
         }
         return true
+    }
+    
+    private func saveHistory(_ data: Data) throws {
+        if let userDefaults = UserDefaults.init(suiteName: "group.com.mobiquity.demo.TakeURPill") {
+            userDefaults.userHistory = data
+        } else {
+            throw HistoryError.write
+        }
     }
 }

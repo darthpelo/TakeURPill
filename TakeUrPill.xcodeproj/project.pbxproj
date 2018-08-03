@@ -16,6 +16,8 @@
 		D94DA98920F94D9800162D76 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98820F94D9800162D76 /* StorageService.swift */; };
 		D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98A20F95FE300162D76 /* HistoryViewController.swift */; };
 		D94DA98F20FB4F9A00162D76 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */; };
+		D9786304210E55460029A4DF /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9786303210E55460029A4DF /* UserDefaults.swift */; };
+		D9786306210E55930029A4DF /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9786305210E55930029A4DF /* UserSession.swift */; };
 		D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8320F8851400E3966F /* AppDelegate.swift */; };
 		D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5A8520F8851400E3966F /* HomeViewController.swift */; };
 		D99D5A8920F8851400E3966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8720F8851400E3966F /* Main.storyboard */; };
@@ -29,6 +31,7 @@
 		D9E604B920FD16D8003A1DA1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98820F94D9800162D76 /* StorageService.swift */; };
 		D9E604BB20FDD2B8003A1DA1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604BA20FDD2B8003A1DA1 /* Logger.swift */; };
 		D9E604BC20FDD312003A1DA1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604BA20FDD2B8003A1DA1 /* Logger.swift */; };
+		D9E7A95F2114A5400011A212 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9786303210E55460029A4DF /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,8 @@
 		D94DA98C20F9EEEC00162D76 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D94DA98D20F9EEF400162D76 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		D9786303210E55460029A4DF /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D9786305210E55930029A4DF /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		D99D5A8020F8851400E3966F /* TakeUrPill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeUrPill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A8320F8851400E3966F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99D5A8520F8851400E3966F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +157,7 @@
 			children = (
 				D94DA97620F91CB000162D76 /* LocalizableViews.swift */,
 				D9E604BA20FDD2B8003A1DA1 /* Logger.swift */,
+				D9786303210E55460029A4DF /* UserDefaults.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D94DA98120F93C0B00162D76 /* Model.swift */,
+				D9786305210E55930029A4DF /* UserSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +392,8 @@
 				D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */,
 				D9E604BB20FDD2B8003A1DA1 /* Logger.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
+				D9786306210E55930029A4DF /* UserSession.swift in Sources */,
+				D9786304210E55460029A4DF /* UserDefaults.swift in Sources */,
 				D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */,
 				D94DA98F20FB4F9A00162D76 /* Intents.intentdefinition in Sources */,
 				D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */,
@@ -406,6 +415,7 @@
 			files = (
 				D9E604BC20FDD312003A1DA1 /* Logger.swift in Sources */,
 				D9E604B820FD16D1003A1DA1 /* Model.swift in Sources */,
+				D9E7A95F2114A5400011A212 /* UserDefaults.swift in Sources */,
 				D9E604B920FD16D8003A1DA1 /* StorageService.swift in Sources */,
 				D9E604B720FD16C4003A1DA1 /* Intents.intentdefinition in Sources */,
 				D9E604AE20FD166F003A1DA1 /* IntentHandler.swift in Sources */,

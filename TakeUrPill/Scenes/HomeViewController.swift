@@ -14,6 +14,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var takePillButton: UIButton!
 
+    lazy var notificationCenter: NotificationCenter = {
+        NotificationCenter.default
+    }()
+
+    deinit {
+        notificationCenter.removeObserver(self)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        notificationCenter.addObserver(self,
+                                 selector: #selector(checkUserSession),
+                                 name: UIApplication.willEnterForegroundNotification,
+                                 object: nil)
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -29,16 +46,27 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func historyButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "ShowHistory", sender: self)
+        showHistory()
     }
     
     @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
         //nothing goes here
     }
 
+    @objc func checkUserSession() {
+        if let session = UserDefaults.standard.userSession as? String,
+            UserSession.History == UserSession(rawValue: session) {
+            showHistory()
+            UserDefaults.standard.userSession = UserSession.Home.rawValue
+        }
+    }
 }
 
 extension HomeViewController {
+    private func showHistory() {
+        self.performSegue(withIdentifier: "ShowHistory", sender: self)
+    }
+
     private func pillTook() {
         let storage = Storage()
 

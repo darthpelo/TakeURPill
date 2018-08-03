@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch userActivity.activityType {
         case "com.mobiquityinc.demo.TakeUrPill.takepill":
             logger("com.mobiquityinc.demo.TakeUrPill.takepill")
+            UserDefaults.standard.userSession = UserSession.Home.rawValue
             return true
         case "TakePillIntent":
             if #available(iOS 12.0, *) {
@@ -34,9 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         return false
                 }
                 let storage = Storage()
-                return storage.store(model)
-            } else {
-                return false
+                if storage.store(model) {
+                    UserDefaults.standard.userSession = UserSession.History.rawValue
+                }
+                return true
             }
         default:()
         }
