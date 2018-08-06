@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         switch userActivity.activityType {
         case "com.mobiquityinc.demo.TakeUrPill.takepill":
-            logger("com.mobiquityinc.demo.TakeUrPill.takepill")
             UserDefaults.standard.userSession = UserSession.Home.rawValue
+            return true
+        case "com.mobiquityinc.demo.TakeUrPill.history":
+            UserDefaults.standard.userSession = UserSession.History.rawValue
             return true
         case "TakePillIntent":
             if #available(iOS 12.0, *) {

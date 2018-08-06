@@ -34,7 +34,8 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        activitySetup()
+        activitySetup(ActivityInformation(activityType: "com.mobiquityinc.demo.TakeUrPill.takepill",
+                                          activityTitle: "I took my pill"))
     }
 
     @IBAction func startButtonPressed(_ sender: Any) {
@@ -77,31 +78,5 @@ extension HomeViewController {
                         ammount: ammount,
                         name: pillName)
         storage.store(pill)
-    }
-
-    private func activitySetup() {
-        // give our activity a unique ID
-        let activity = NSUserActivity(activityType: "com.mobiquityinc.demo.TakeUrPill.takepill")
-
-        // give it a title that will be displayed to users
-        activity.title = "I took my pill"
-
-        // allow Siri to index this and use it for voice-matched queries
-        activity.isEligibleForSearch = true
-        if #available(iOS 12.0, *) {
-            activity.isEligibleForPrediction = true
-        }
-
-        // give the activity a unique identifier so we can delete it later if we need to
-        if #available(iOS 12.0, *) {
-            activity.persistentIdentifier = NSUserActivityPersistentIdentifier("com.mobiquityinc.demo.TakeUrPill.takepill")
-        }
-
-        // You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri
-        activity.suggestedInvocationPhrase = "I took my pill"
-
-        // make this activity active for the current view controller – this is what Siri will restore when the activity is triggered
-        self.userActivity = activity
-
     }
 }

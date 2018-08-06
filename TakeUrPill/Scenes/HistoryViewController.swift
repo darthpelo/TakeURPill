@@ -25,7 +25,15 @@ class HistoryViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         list = getHistory().sorted {$0.timestamp > $1.timestamp }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        activitySetup(ActivityInformation(activityType: "com.mobiquityinc.demo.TakeUrPill.history",
+                                          activityTitle: "List of all pills I took"))
     }
 
     deinit {
@@ -34,7 +42,7 @@ class HistoryViewController: UIViewController {
 
     @IBAction func eraseHistoryButtonPressed(_ sender: Any) {
         let storage = Storage()
-        if storage.deleteFiles() == false {
+        if storage.deleteHistory() == false {
             print("Error erasing file")
         } else {
             list = getHistory().sorted {$0.timestamp > $1.timestamp }
@@ -46,7 +54,6 @@ class HistoryViewController: UIViewController {
         list = getHistory().sorted {$0.timestamp > $1.timestamp }
         tableView.reloadData()
     }
-
 }
 
 extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {

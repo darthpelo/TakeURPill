@@ -12,7 +12,7 @@ import Intents
 protocol StorageService {
     //    func saveHistory(_ data: Data) throws
     func readHistory() throws -> Data
-    func deleteFiles() -> Bool
+    func deleteHistory() -> Bool
     func store(_ pill: Pill) -> Bool
 }
 
@@ -24,14 +24,10 @@ enum HistoryError: Error {
 }
 
 final class Storage: StorageService {
-    private var json: String
-    
-    init(_ fileName: String = "sessions.json") {
-        json = fileName
-    }
-    
+    private let suitName = "group.com.mobiquity.demo.TakeURPill"
+
     func readHistory() throws -> Data {
-        if let userDefaults = UserDefaults.init(suiteName: "group.com.mobiquity.demo.TakeURPill"),
+        if let userDefaults = UserDefaults.init(suiteName: suitName),
             let history = userDefaults.userHistory {
             return history
         }
@@ -49,19 +45,12 @@ final class Storage: StorageService {
         return try? encoder.encode(list)
     }
     
-    func deleteFiles() -> Bool {
-        let fileManager = FileManager.default
-        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        do {
-            let fileURLs = try fileManager.contentsOfDirectory(at: documentsURL, includingPropertiesForKeys: nil)
-            
-            for fileURL in fileURLs {
-                try fileManager.removeItem(at: fileURL)
-            }
+    func deleteHistory() -> Bool {
+        if let userDefaults = UserDefaults.init(suiteName: suitName) {
+            userDefaults.userHistory = nil
             return true
-        } catch {
-            return false
         }
+        return false
     }
     
     func store(_ pill: Pill) -> Bool {
@@ -104,7 +93,7 @@ final class Storage: StorageService {
     }
     
     private func saveHistory(_ data: Data) throws {
-        if let userDefaults = UserDefaults.init(suiteName: "group.com.mobiquity.demo.TakeURPill") {
+        if let userDefaults = UserDefaults.init(suiteName: suitName) {
             userDefaults.userHistory = data
         } else {
             throw HistoryError.write
