@@ -131,11 +131,11 @@
 		D94DA97A20F93B0700162D76 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
-				D99D5AA320F896B800E3966F /* StartSessionViewController.swift */,
+				D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */,
 				D94DA98A20F95FE300162D76 /* HistoryViewController.swift */,
 				D9A211CD2119D6A600F919C2 /* HomePresenter.swift */,
-				D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */,
+				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
+				D99D5AA320F896B800E3966F /* StartSessionViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";

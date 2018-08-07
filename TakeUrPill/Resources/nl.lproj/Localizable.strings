@@ -22,3 +22,7 @@
 "history.button.close.title" = "Sluiten";
 "history.button.erase.title" = "Verwijderen";
 "history.title" = "Pillen geschiedenis";
+
+"activity.home" = "Ik nam mijn pil";
+"activity.history" = "Lijst van alle pillen die ik heb genomen";
+

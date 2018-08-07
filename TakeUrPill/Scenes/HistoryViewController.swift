@@ -34,7 +34,8 @@ class HistoryViewController: UIViewController {
         super.viewDidAppear(animated)
 
         activitySetup(ActivityInformation(activityType: "com.mobiquityinc.demo.TakeUrPill.history",
-                                          activityTitle: "List of all pills I took"))
+                                          activityTitle: NSLocalizedString("activity.history", comment: ""))
+        )
     }
 
     deinit {

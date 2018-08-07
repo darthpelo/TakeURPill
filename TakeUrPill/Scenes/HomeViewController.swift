@@ -41,7 +41,8 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         activitySetup(ActivityInformation(activityType: "com.mobiquityinc.demo.TakeUrPill.takepill",
-                                          activityTitle: "I took my pill"))
+                                          activityTitle: NSLocalizedString("activity.home", comment: ""))
+        )
     }
     
     @IBAction func startButtonPressed(_ sender: Any) {

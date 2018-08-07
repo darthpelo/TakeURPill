@@ -22,3 +22,6 @@
 "history.button.close.title" = "Close";
 "history.button.erase.title" = "Erase";
 "history.title" = "Pills History";
+
+"activity.home" = "I took my pill";
+"activity.history" = "List of all pills I took";

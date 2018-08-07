@@ -22,3 +22,6 @@
 "history.button.close.title" = "Chiudi";
 "history.button.erase.title" = "Cancella";
 "history.title" = "Storico delle pillole";
+
+"activity.home" = "Ho preso la pillola";
+"activity.history" = "Lista di tutte le pillole che ho preso";
