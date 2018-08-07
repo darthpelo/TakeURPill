@@ -24,6 +24,8 @@
 		D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8A20F8851800E3966F /* Assets.xcassets */; };
 		D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */; };
 		D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D5AA320F896B800E3966F /* StartSessionViewController.swift */; };
+		D9A211CE2119D6A600F919C2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A211CD2119D6A600F919C2 /* HomePresenter.swift */; };
+		D9A211D02119E59700F919C2 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */; };
 		D9E604AE20FD166F003A1DA1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604AD20FD166F003A1DA1 /* IntentHandler.swift */; };
 		D9E604B220FD166F003A1DA1 /* TakePillIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9E604AB20FD166F003A1DA1 /* TakePillIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D9E604B720FD16C4003A1DA1 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98E20FB4F9A00162D76 /* Intents.intentdefinition */; };
@@ -90,6 +92,8 @@
 		D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D5A9A20F8851800E3966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99D5AA320F896B800E3966F /* StartSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionViewController.swift; sourceTree = "<group>"; };
+		D9A211CD2119D6A600F919C2 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		D9E604A620FD1410003A1DA1 /* TakeUrPill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakeUrPill.entitlements; sourceTree = "<group>"; };
 		D9E604AB20FD166F003A1DA1 /* TakePillIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TakePillIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E604AD20FD166F003A1DA1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
 				D99D5AA320F896B800E3966F /* StartSessionViewController.swift */,
 				D94DA98A20F95FE300162D76 /* HistoryViewController.swift */,
+				D9A211CD2119D6A600F919C2 /* HomePresenter.swift */,
+				D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -402,10 +408,12 @@
 				D94DA98920F94D9800162D76 /* StorageService.swift in Sources */,
 				D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */,
 				D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */,
+				D9A211D02119E59700F919C2 /* HistoryPresenter.swift in Sources */,
 				D9E604BB20FDD2B8003A1DA1 /* Logger.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
 				D9786306210E55930029A4DF /* UserSession.swift in Sources */,
 				D9786304210E55460029A4DF /* UserDefaults.swift in Sources */,
+				D9A211CE2119D6A600F919C2 /* HomePresenter.swift in Sources */,
 				D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */,
 				D94DA98F20FB4F9A00162D76 /* Intents.intentdefinition in Sources */,
 				D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */,

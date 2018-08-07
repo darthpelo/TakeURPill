@@ -11,7 +11,7 @@ import Foundation
 struct Pill: Codable {
     var timestamp: TimeInterval
     var ammount: Int
-    var name: String?
+    var name: String
 }
 
 extension Pill: Equatable {

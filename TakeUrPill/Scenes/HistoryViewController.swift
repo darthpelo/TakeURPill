@@ -13,6 +13,7 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     private var list: [Pill] = []
+    private lazy var presenter: HistoryManageable = HistoryPresenter()
     private lazy var notification = NotificationCenter.default
 
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class HistoryViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        list = getHistory().sorted {$0.timestamp > $1.timestamp }
+        list = presenter.getUserHistory()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -41,17 +42,16 @@ class HistoryViewController: UIViewController {
     }
 
     @IBAction func eraseHistoryButtonPressed(_ sender: Any) {
-        let storage = Storage()
-        if storage.deleteHistory() == false {
-            print("Error erasing file")
-        } else {
-            list = getHistory().sorted {$0.timestamp > $1.timestamp }
+        if presenter.eraseUserHistory() {
+            list.removeAll()
             tableView.reloadData()
+        } else {
+            logger("Error erasing file")
         }
     }
 
     @objc func reload() {
-        list = getHistory().sorted {$0.timestamp > $1.timestamp }
+        list = presenter.getUserHistory()
         tableView.reloadData()
     }
 }
@@ -72,21 +72,5 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
                                                                    timeStyle: .medium)
 
         return cell
-    }
-}
-
-extension HistoryViewController {
-    private func getHistory() -> [Pill] {
-        let storage = Storage()
-
-        var list: [Pill] = []
-
-        do {
-            let data = try storage.readHistory()
-            let decoder = JSONDecoder()
-            list = try decoder.decode([Pill].self, from: data)
-        } catch {}
-
-        return list
     }
 }

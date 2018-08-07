@@ -30,10 +30,8 @@ class StartSessionViewController: UIViewController {
             return
         }
 
-        let userDefault = UserDefaults.standard
-
-        userDefault.set(name, forKey: "pill.name")
-        userDefault.set(Int(ammount ?? "1"  ), forKey: "pill.ammount")
+        UserDefaults.standard.pillName = name
+        UserDefaults.standard.pillAmmount = Int(ammount ?? "1")
 
         self.dismiss(animated: true, completion: nil)
     }

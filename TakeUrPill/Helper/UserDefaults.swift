@@ -28,5 +28,15 @@ extension UserDefaults {
         get { return data(forKey: #function) }
         set { set(newValue, forKey: #function) }
     }
+
+    var pillName: String? {
+        get { return string(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
+
+    var pillAmmount: Int? {
+        get { return integer(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
 }
 

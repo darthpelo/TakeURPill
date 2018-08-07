@@ -18,7 +18,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var intentSuggestionLabel: UILabel!
     
     private var siriVC: INUIAddVoiceShortcutViewController?
-    
+    private lazy var presenter: HomeManageble = HomePresenter()
+
     lazy var notificationCenter: NotificationCenter = {
         NotificationCenter.default
     }()
@@ -60,26 +61,13 @@ class HomeViewController: UIViewController {
     @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
         //nothing goes here
     }
-    
+
     @objc func checkUserSession() {
-        if let session = UserDefaults.standard.userSession as? String,
-            UserSession.History == UserSession(rawValue: session) {
-            showHistory()
-            UserDefaults.standard.userSession = UserSession.Home.rawValue
-        }
+        userSession()
     }
     
     @objc func showSiri() {
-        guard let data = UserDefaults.standard.lastPill,
-            let lastPill = Storage().convertToPill(data) else { return }
-        
-        let intent = TakePillIntent()
-        intent.ammount = lastPill.ammount as NSNumber
-        intent.title = lastPill.name
-        
-        guard let short = INShortcut(intent: intent) else { return }
-        
-        siriVC = INUIAddVoiceShortcutViewController.init(shortcut: short)
+        siriVC = presenter.showSiriViewController()
         
         if let siriVC = siriVC {
             siriVC.delegate = self
@@ -89,29 +77,34 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController {
-    
-    private func setupAddSiri() {
-        let storage = Storage()
-        
-        if let lastPill = storage.getLastPill() {
-            UserDefaults.standard.lastPill = storage.convertToData(lastPill)
-            
-            let siriButton: INUIAddVoiceShortcutButton = INUIAddVoiceShortcutButton.init(style: INUIAddVoiceShortcutButtonStyle.whiteOutline)
-            
-            siriButton.frame.size = self.siriButtonContainer.frame.size
-            
-            siriButtonContainer.addSubview(siriButton)
-            siriButtonContainer.sizeToFit()
-            
-            siriButton.addTarget(self, action: #selector(showSiri), for: .touchUpInside)
-            
-            siriButtonContainer.isHidden = false
+    private func userSession() {
+        if presenter.showUserHistory() {
+            showHistory()
+        }
+    }
 
-            let text = String(format: NSLocalizedString("home.siri.intent.suggestion", comment: ""), lastPill.name!)
-            intentSuggestionLabel.text = text
+    private func setupAddSiri() {
+        if let pillName = presenter.getLastPillName() {
+            showSiriElements(pillName)
         } else {
             hideSiriElements()
         }
+    }
+
+    private func showSiriElements(_ pillName: String) {
+        let siriButton: INUIAddVoiceShortcutButton = INUIAddVoiceShortcutButton.init(style: INUIAddVoiceShortcutButtonStyle.whiteOutline)
+
+        siriButton.frame.size = self.siriButtonContainer.frame.size
+
+        siriButtonContainer.addSubview(siriButton)
+        siriButtonContainer.sizeToFit()
+
+        siriButton.addTarget(self, action: #selector(showSiri), for: .touchUpInside)
+
+        siriButtonContainer.isHidden = false
+
+        let text = String(format: NSLocalizedString("home.siri.intent.suggestion", comment: ""), pillName)
+        intentSuggestionLabel.text = text
     }
 
     private func hideSiriElements() {
@@ -132,15 +125,7 @@ extension HomeViewController {
     }
     
     private func pillTook() {
-        let storage = Storage()
-        
-        let pillName = UserDefaults.standard.object(forKey: "pill.name") as? String
-        let ammount = UserDefaults.standard.integer(forKey: "pill.ammount")
-        
-        let pill = Pill(timestamp: Date().timeIntervalSince1970,
-                        ammount: ammount,
-                        name: pillName)
-        storage.store(pill)
+        presenter.pillTook()
     }
 }
 
@@ -159,6 +144,4 @@ extension HomeViewController: INUIAddVoiceShortcutViewControllerDelegate {
         logger("no shortcut created")
         siriVC?.dismiss(animated: true, completion: nil)
     }
-    
-    
 }
