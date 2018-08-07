@@ -18,5 +18,15 @@ extension UserDefaults {
         get { return data(forKey: #function) }
         set { set(newValue, forKey: #function) }
     }
+
+    var lastPill: Data? {
+        get { return data(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
+
+    var userIntentsHistory: Data? {
+        get { return data(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
 }
 

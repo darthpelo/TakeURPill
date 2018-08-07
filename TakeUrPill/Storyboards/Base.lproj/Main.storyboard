@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,17 +73,39 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="home.title"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnl-FO-RtH">
+                                <rect key="frame" x="107.5" y="575" width="160" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="wE2-z5-pU6"/>
+                                    <constraint firstAttribute="width" constant="160" id="zT1-Y7-NiT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-W8-u57">
+                                <rect key="frame" x="32" y="567" width="311" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fnl-FO-RtH" firstAttribute="top" secondItem="BgJ-W8-u57" secondAttribute="bottom" constant="8" id="1Pj-Ai-WIx"/>
                             <constraint firstItem="dFN-F0-ZJQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="60l-1y-udf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fnl-FO-RtH" secondAttribute="bottom" constant="38" id="LQ4-Jb-BT3"/>
                             <constraint firstItem="aT5-cG-Pm7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lh8-YK-qv3"/>
+                            <constraint firstItem="BgJ-W8-u57" firstAttribute="centerX" secondItem="Fnl-FO-RtH" secondAttribute="centerX" id="Qsu-ew-ZrL"/>
+                            <constraint firstItem="Fnl-FO-RtH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UVS-j3-xAO"/>
                             <constraint firstItem="dFN-F0-ZJQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V9F-c9-fZh"/>
+                            <constraint firstItem="BgJ-W8-u57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="VtK-Ec-7nz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BgJ-W8-u57" secondAttribute="trailing" constant="32" id="aoW-hU-4lD"/>
                             <constraint firstItem="aT5-cG-Pm7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hZH-lZ-0Hk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="intentSuggestionLabel" destination="BgJ-W8-u57" id="WNp-yE-W2g"/>
+                        <outlet property="siriButtonContainer" destination="Fnl-FO-RtH" id="Tz3-ri-UIn"/>
                         <outlet property="startButton" destination="bZS-pF-jV2" id="cTe-85-FmI"/>
                         <outlet property="takePillButton" destination="uNS-C6-dQX" id="dd5-is-If3"/>
                         <segue destination="XoZ-1h-3rd" kind="presentation" identifier="ShowStartSession" id="TOh-FZ-4AI"/>

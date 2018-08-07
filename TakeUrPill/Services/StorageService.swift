@@ -34,10 +34,20 @@ final class Storage: StorageService {
         
         throw HistoryError.fileEmpty
     }
-    
+
+    func convertToPill(_ data: Data) -> Pill? {
+        let decoder = JSONDecoder()
+        return try? decoder.decode(Pill.self, from: data)
+    }
+
     func convertToPills(_ data: Data) -> [Pill]? {
         let decoder = JSONDecoder()
         return try? decoder.decode([Pill].self, from: data)
+    }
+
+    func convertToData(_ pill: Pill) -> Data? {
+        let encoder = JSONEncoder()
+        return try? encoder.encode(pill)
     }
     
     func convertToData(_ list: [Pill]) -> Data? {
@@ -90,6 +100,15 @@ final class Storage: StorageService {
             return false
         }
         return true
+    }
+
+    func getLastPill() -> Pill? {
+        guard let data = try? readHistory() else {
+            return nil
+        }
+
+        let history = convertToPills(data)
+        return history?.sorted {$0.timestamp > $1.timestamp }.first
     }
     
     private func saveHistory(_ data: Data) throws {

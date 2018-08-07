@@ -38,9 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 let storage = Storage()
                 if storage.store(model) {
-                    UserDefaults.standard.userSession = UserSession.History.rawValue
+                    return true
                 }
-                return true
+                return false
             }
         default:()
         }

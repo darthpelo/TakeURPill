@@ -10,6 +10,7 @@
 "home.button.startsession.title" = "Comincia la sessione";
 "home.button.history.title" = "Storico";
 "home.title" = "Prendi la Pillola";
+"home.siri.intent.suggestion" = "La prossima volta che prendi la pillola %@, dillo a Siri";
 
 "startSession.button.close.title" = "Chiudi";
 "startSession.button.start.title" = "Inizia";

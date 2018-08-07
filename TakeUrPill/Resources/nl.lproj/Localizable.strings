@@ -10,6 +10,7 @@
 "home.button.startsession.title" = "Begin met sessie";
 "home.button.history.title" = "Kroniek";
 "home.title" = "Neem je pil";
+"home.siri.intent.suggestion" = "Vertel de volgende keer aan Siri wanneer je een %@ pil neemt";
 
 "startSession.button.close.title" = "Sluiten";
 "startSession.button.start.title" = "Start";
