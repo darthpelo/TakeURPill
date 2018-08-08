@@ -104,8 +104,8 @@ extension HomeViewController {
 
         siriButtonContainer.isHidden = false
 
-        let text = String(format: NSLocalizedString("home.siri.intent.suggestion", comment: ""), pillName)
-        intentSuggestionLabel.text = text
+        intentSuggestionLabel.text = String(format: NSLocalizedString("home.siri.intent.suggestion", comment: ""),
+                                            pillName)
     }
 
     private func hideSiriElements() {

@@ -34,7 +34,7 @@
 		D9E604BB20FDD2B8003A1DA1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604BA20FDD2B8003A1DA1 /* Logger.swift */; };
 		D9E604BC20FDD312003A1DA1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604BA20FDD2B8003A1DA1 /* Logger.swift */; };
 		D9E7A95F2114A5400011A212 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9786303210E55460029A4DF /* UserDefaults.swift */; };
-		D9E7A96221182F230011A212 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7A96121182F230011A212 /* UIViewController+Extension.swift */; };
+		D9E7A96221182F230011A212 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +100,7 @@
 		D9E604AF20FD166F003A1DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9E604B620FD167B003A1DA1 /* TakePillIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakePillIntents.entitlements; sourceTree = "<group>"; };
 		D9E604BA20FDD2B8003A1DA1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		D9E7A96121182F230011A212 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +247,7 @@
 		D9E7A96021182EFE0011A212 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D9E7A96121182F230011A212 /* UIViewController+Extension.swift */,
+				D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E7A96221182F230011A212 /* UIViewController+Extension.swift in Sources */,
+				D9E7A96221182F230011A212 /* UIViewControllerExtension.swift in Sources */,
 				D94DA98220F93C0B00162D76 /* Model.swift in Sources */,
 				D94DA98920F94D9800162D76 /* StorageService.swift in Sources */,
 				D99D5A8620F8851400E3966F /* HomeViewController.swift in Sources */,
