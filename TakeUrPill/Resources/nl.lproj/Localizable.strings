@@ -25,4 +25,5 @@
 
 "activity.home" = "Ik nam mijn pil";
 "activity.history" = "Lijst van alle pillen die ik heb genomen";
+"activity.history.suggestion" = "Hoeveel pillen heb ik gekregen?";
 

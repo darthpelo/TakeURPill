@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import IntentsUI
 import Intents
+import IntentsUI
 
 protocol HomeManageble {
     func pillTook()
@@ -38,7 +38,7 @@ struct HomePresenter: HomeManageble {
     
     func getLastPillName() -> String? {
         if let lastPill = storage.getLastPill() {
-            UserDefaults.standard.lastPill = storage.convertToData(lastPill)
+            UserDefaults.standard.lastPill = Convert.convertToData(lastPill)
             return lastPill.name
         } else {
             return nil
@@ -57,16 +57,15 @@ struct HomePresenter: HomeManageble {
 
     func showSiriViewController() -> INUIAddVoiceShortcutViewController? {
         guard let data = UserDefaults.standard.lastPill,
-            let lastPill = Storage().convertToPill(data) else { return nil }
+            let lastPill = Convert.convertToPill(data) else { return nil }
 
         let intent = TakePillIntent()
         intent.ammount = lastPill.ammount as NSNumber
         intent.title = lastPill.name
+        intent.suggestedInvocationPhrase = "\(lastPill.name) time"
 
         guard let short = INShortcut(intent: intent) else { return nil }
 
-        return INUIAddVoiceShortcutViewController.init(shortcut: short)
+        return INUIAddVoiceShortcutViewController(shortcut: short)
     }
-
-
 }

@@ -1,5 +1,5 @@
 //
-//  UIViewController+Extension.swift
+//  UIViewControllerExtension.swift
 //  TakeUrPill
 //
 //  Created by Alessio Roberto on 06/08/2018.
@@ -10,34 +10,48 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-    struct ActivityInformation {
-        let activityType: String
-        let activityTitle: String
+    func activitySetup(_ information: SiriService.ActivityInformation) {
+        // make this activity active for the current view controller – this is what Siri will restore when the activity is triggered
+        self.userActivity = SiriService.activitySetup(information)
+    }
+}
+
+extension UIViewController {
+    public func dch_checkDeallocation(afterDelay delay: TimeInterval = 2.0) {
+        let rootParentViewController = dchRootParentViewController
+
+        // We don’t check `isBeingDismissed` simply on this view controller because it’s common
+        // to wrap a view controller in another view controller (e.g. in UINavigationController)
+        // and present the wrapping view controller instead.
+        if isMovingFromParent || rootParentViewController.isBeingDismissed {
+            let typeOfSelf = type(of: self)
+            let disappearanceSource: String = isMovingFromParent ? "removed from its parent" : "dismissed"
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: { [weak self] in
+                if self != nil {
+                    logger("\(typeOfSelf) not deallocated after being \(disappearanceSource)")
+                } else {
+                    logger("\(typeOfSelf) deallocated after being \(disappearanceSource)")
+                }
+            })
+        }
     }
 
-    func activitySetup(_ information: ActivityInformation) {
-        // give our activity a unique ID
-        let activity = NSUserActivity(activityType: information.activityType)
+    private var dchRootParentViewController: UIViewController {
+        var root = self
 
-        // give it a title that will be displayed to users
-        activity.title = information.activityTitle
-
-        // allow Siri to index this and use it for voice-matched queries
-        activity.isEligibleForSearch = true
-        if #available(iOS 12.0, *) {
-            activity.isEligibleForPrediction = true
+        while let parent = root.parent {
+            root = parent
         }
 
-        // give the activity a unique identifier so we can delete it later if we need to
-        if #available(iOS 12.0, *) {
-            activity.persistentIdentifier = NSUserActivityPersistentIdentifier(information.activityType)
-        }
+        return root
+    }
+}
 
-        // You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri
-        activity.suggestedInvocationPhrase = information.activityTitle
+class BaseViewController: UIViewController {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
 
-        // make this activity active for the current view controller – this is what Siri will restore when the activity is triggered
-        self.userActivity = activity
-
+        dch_checkDeallocation()
     }
 }

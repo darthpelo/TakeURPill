@@ -17,11 +17,15 @@ class IntentHandler: INExtension, TakePillIntentHandling {
         return self
     }
 
+//    func confirm(intent: TakePillIntent, completion: @escaping (TakePillIntentResponse) -> Void) {
+//        <#code#>
+//    }
+
     func handle(intent: TakePillIntent, completion: @escaping (TakePillIntentResponse) -> Void) {
         if let pill = Pill(from: intent) {
             let storage = Storage()
             if storage.store(pill) {
-                completion(TakePillIntentResponse(code: .success, userActivity: nil))
+                completion(TakePillIntentResponse.success(pillName: pill.name))
             } else {
                 completion(TakePillIntentResponse(code: .failure, userActivity: nil))
             }

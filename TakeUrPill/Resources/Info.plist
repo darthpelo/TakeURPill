@@ -23,8 +23,8 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>TakePillIntent</string>
-		<string>com.mobiquityinc.demo.TakeUrPill.takepill</string>
-		<string>com.mobiquityinc.demo.TakeUrPill.history</string>
+		<string>com.alessioroberto.TakeUrPill.history</string>
+		<string>com.alessioroberto.TakeUrPill.takepill</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

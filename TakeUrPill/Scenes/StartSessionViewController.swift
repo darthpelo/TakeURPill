@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartSessionViewController: UIViewController {
+final class StartSessionViewController: BaseViewController {
 
     @IBOutlet weak var pillNameTextField: UITextField!
     @IBOutlet weak var ammountTextField: UITextField!
@@ -20,6 +20,7 @@ class StartSessionViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "Settings"
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
@@ -43,10 +44,10 @@ extension StartSessionViewController: UITextFieldDelegate {
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == pillNameTextField {
-            name = textField.text! + string
-        } else if textField == ammountTextField {
-            ammount = textField.text! + string
+        if textField == pillNameTextField, let text = textField.text {
+            name = text + string
+        } else if textField == ammountTextField, let text = textField.text {
+            ammount = text + string
         }
         return true
     }

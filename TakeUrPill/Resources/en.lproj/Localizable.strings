@@ -25,3 +25,4 @@
 
 "activity.home" = "I took my pill";
 "activity.history" = "List of all pills I took";
+"activity.history.suggestion" = "How many pills?";

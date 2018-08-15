@@ -25,3 +25,4 @@
 
 "activity.home" = "Ho preso la pillola";
 "activity.history" = "Lista di tutte le pillole che ho preso";
+"activity.history.suggestion" = "Quante pillole ho preso?";

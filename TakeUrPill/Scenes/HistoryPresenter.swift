@@ -7,13 +7,20 @@
 //
 
 import Foundation
+import IntentsUI
 
 protocol HistoryManageable {
+    var information: SiriService.ActivityInformation { get }
+
     func eraseUserHistory() -> Bool
     func getUserHistory() -> [Pill]
+    func showSiriViewController() -> INUIAddVoiceShortcutViewController?
 }
 
 struct HistoryPresenter: HistoryManageable {
+    let information = SiriService.ActivityInformation(activityType: "com.alessioroberto.TakeUrPill.history",
+                                                      activityTitle: NSLocalizedString("activity.history", comment: ""),
+                                                      activitySuggestedInvocation: NSLocalizedString("activity.history.suggestion", comment: ""))
     private var storage: Storage
 
     init(_ storage: Storage = Storage()) {
@@ -36,5 +43,7 @@ struct HistoryPresenter: HistoryManageable {
         return list.sorted { $0.timestamp > $1.timestamp }
     }
 
-
+    func showSiriViewController() -> INUIAddVoiceShortcutViewController? {
+        return INUIAddVoiceShortcutViewController(shortcut: INShortcut(userActivity: SiriService.activitySetup(information)))
+    }
 }

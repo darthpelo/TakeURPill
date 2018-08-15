@@ -59,34 +59,12 @@ class StorageTests: XCTestCase {
         XCTAssertEqual(result[1], pillTwo)
     }
 
-    func testWrite() {
-        let encoder = JSONEncoder()
-        let json = try! encoder.encode(getPill())
-
-        let sut = Storage("test.json")
-        XCTAssertNoThrow(try sut.saveHistory(json))
-    }
-
-    func testRead() {
-        testWrite()
-        let sut = Storage("test.json")
-        let result = try? sut.readHistory()
-        
-        XCTAssertNotNil(result)
-
-        let decoder = JSONDecoder()
-        let pill = try! decoder.decode(Pill.self, from: result!)
-
-        XCTAssertEqual(pill, getPill())
-    }
-
     func testMultipleRecords() {
         var list = getPills()
 
         let encoder = JSONEncoder()
         let json = try! encoder.encode(list)
-        let sut = Storage("test.json")
-        XCTAssertNoThrow(try sut.saveHistory(json))
+        let sut = Storage()
 
         var result = try? sut.readHistory()
 
@@ -98,8 +76,6 @@ class StorageTests: XCTestCase {
         XCTAssertEqual(pills, list)
 
         list.append(getPill())
-
-        XCTAssertNoThrow(try sut.saveHistory(try encoder.encode(list)))
 
         result = try? sut.readHistory()
         pills = try! decoder.decode([Pill].self, from: result!)

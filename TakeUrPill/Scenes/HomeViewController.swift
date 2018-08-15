@@ -6,11 +6,14 @@
 //  Copyright © 2018 Alessio Roberto. All rights reserved.
 //
 
-import Intents
 import IntentsUI
 import UIKit
 
-class HomeViewController: UIViewController {
+struct ConfigureHome {
+    let controller: HomeController
+}
+
+final class HomeViewController: BaseViewController {
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var takePillButton: UIButton!
@@ -18,8 +21,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var intentSuggestionLabel: UILabel!
     
     private var siriVC: INUIAddVoiceShortcutViewController?
-    private lazy var presenter: HomeManageble = HomePresenter()
-
+    
+    var presenter: HomeManageble?
+    var configure: ConfigureHome?
+    
     lazy var notificationCenter: NotificationCenter = {
         NotificationCenter.default
     }()
@@ -31,22 +36,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notificationCenter.addObserver(self,
-                                       selector: #selector(checkUserSession),
-                                       name: UIApplication.willEnterForegroundNotification,
-                                       object: nil)
+        notificationCenter.addUniqueObserver(self,
+                                             selector: #selector(checkUserSession),
+                                             name: NSNotification
+                                                .Name(rawValue: "com.alessioroberto.TakeUrPill.history"),
+                                             object: nil)
+
+        self.title = NSLocalizedString("home.title", comment: "")
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        activitySetup(ActivityInformation(activityType: "com.mobiquityinc.demo.TakeUrPill.takepill",
-                                          activityTitle: NSLocalizedString("activity.home", comment: ""))
-        )
-    }
-    
+
     @IBAction func startButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "ShowStartSession", sender: self)
     }
     
     @IBAction func takePillButtonPressed(_ sender: Any) {
@@ -62,13 +61,13 @@ class HomeViewController: UIViewController {
     @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
         //nothing goes here
     }
-
+    
     @objc func checkUserSession() {
         userSession()
     }
     
     @objc func showSiri() {
-        siriVC = presenter.showSiriViewController()
+        siriVC = presenter?.showSiriViewController()
         
         if let siriVC = siriVC {
             siriVC.delegate = self
@@ -79,59 +78,61 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController {
     private func userSession() {
-        if presenter.showUserHistory() {
+        if let presenter = presenter, presenter.showUserHistory() {
             showHistory()
         }
     }
-
+    
     private func setupAddSiri() {
-        if let pillName = presenter.getLastPillName() {
+        if let pillName = presenter?.getLastPillName() {
             showSiriElements(pillName)
         } else {
             hideSiriElements()
         }
     }
-
+    
     private func showSiriElements(_ pillName: String) {
-        let siriButton: INUIAddVoiceShortcutButton = INUIAddVoiceShortcutButton.init(style: INUIAddVoiceShortcutButtonStyle.whiteOutline)
-
+        let siriButton: INUIAddVoiceShortcutButton = INUIAddVoiceShortcutButton(style: INUIAddVoiceShortcutButtonStyle.whiteOutline)
+        
         siriButton.frame.size = self.siriButtonContainer.frame.size
-
+        
         siriButtonContainer.addSubview(siriButton)
         siriButtonContainer.sizeToFit()
-
+        
         siriButton.addTarget(self, action: #selector(showSiri), for: .touchUpInside)
-
+        
         siriButtonContainer.isHidden = false
-
+        
         intentSuggestionLabel.text = String(format: NSLocalizedString("home.siri.intent.suggestion", comment: ""),
                                             pillName)
     }
-
+    
     private func hideSiriElements() {
         let subviews = siriButtonContainer.subviews
-
+        
         if let button = subviews.first, subviews.count == 1 {
             button.removeFromSuperview()
         }
-
+        
         intentSuggestionLabel.text = nil
-
+        
         siriButtonContainer.isHidden = true
         intentSuggestionLabel.isEnabled = true
     }
-
+    
     private func showHistory() {
-        self.performSegue(withIdentifier: "ShowHistory", sender: self)
+        configure?.controller.show()
     }
     
     private func pillTook() {
-        presenter.pillTook()
+        presenter?.pillTook()
     }
 }
 
 extension HomeViewController: INUIAddVoiceShortcutViewControllerDelegate {
-    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController,
+                                        didFinishWith voiceShortcut: INVoiceShortcut?,
+                                        error: Error?) {
         if let error = error {
             logger(error)
         } else {
