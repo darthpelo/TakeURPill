@@ -42,3 +42,4 @@ This project shows only how to implement, there is nothing more than what explai
 
 * [Introduction to Siri Shortcuts](https://developer.apple.com/videos/play/wwdc2018/211/)
 * [Building for Voice with Siri Shortcuts](https://developer.apple.com/videos/play/wwdc2018/214/)
+* [Apple complete example](https://developer.apple.com/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts)
