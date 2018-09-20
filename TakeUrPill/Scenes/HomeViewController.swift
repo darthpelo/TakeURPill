@@ -25,6 +25,8 @@ final class HomeViewController: BaseViewController {
     var presenter: HomeManageble?
     var configure: ConfigureHome?
     
+    private var pickerView: PillsPickerView?
+    
     lazy var notificationCenter: NotificationCenter = {
         NotificationCenter.default
     }()
@@ -44,14 +46,13 @@ final class HomeViewController: BaseViewController {
 
         self.title = NSLocalizedString("home.title", comment: "")
     }
-
+    
     @IBAction func startButtonPressed(_ sender: Any) {
     }
     
     @IBAction func takePillButtonPressed(_ sender: Any) {
-        pillTook()
-        
-        setupAddSiri()
+        configurePickerView()
+        pickerView?.isTo(show: true)
     }
     
     @IBAction func historyButtonPressed(_ sender: Any) {
@@ -72,6 +73,27 @@ final class HomeViewController: BaseViewController {
         if let siriVC = siriVC {
             siriVC.delegate = self
             self.present(siriVC, animated: true, completion: nil)
+        }
+    }
+    
+    private func configurePickerView() {
+        if pickerView == nil {
+            pickerView = PillsPickerView().loadPickerView()
+            
+            pickerView?.configure(onView: self.view,
+                                  onDone: { [weak self] selectedPillType in
+                                    guard let self = self else { return }
+                                    
+                                    self.pillTook(selectedPillType)
+                                    self.setupAddSiri()
+                                    
+                                    self.pickerView?.isTo(show: false)
+                                    self.pickerView = nil
+                }, onCancel: { [weak self] in
+                    guard let self = self else { return }
+                    self.pickerView?.isTo(show: false)
+                    self.pickerView = nil
+            })
         }
     }
 }
@@ -124,8 +146,8 @@ extension HomeViewController {
         configure?.controller.show()
     }
     
-    private func pillTook() {
-        presenter?.pillTook()
+    private func pillTook(_ pill: PillType) {
+        presenter?.pillTook(pill)
     }
 }
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJD-jg-kSJ">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJD-jg-kSJ">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dFN-F0-ZJQ">
-                                <rect key="frame" x="60" y="361" width="255" height="196"/>
+                                <rect key="frame" x="32.5" y="241.5" width="255" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-pF-jV2" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                         <rect key="frame" x="27" y="0.0" width="201" height="60"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnl-FO-RtH">
-                                <rect key="frame" x="107.66666666666669" y="686" width="160" height="54"/>
+                                <rect key="frame" x="80" y="476" width="160" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="wE2-z5-pU6"/>
@@ -70,7 +70,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-W8-u57">
-                                <rect key="frame" x="32" y="678" width="311" height="0.0"/>
+                                <rect key="frame" x="32" y="468" width="256" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,14 +107,14 @@
             <objects>
                 <viewController id="XoZ-1h-3rd" customClass="StartSessionViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BiL-LC-rgu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-Ps-RVe">
-                                <rect key="frame" x="0.0" y="188" width="375" height="154.66666666666663"/>
+                                <rect key="frame" x="0.0" y="159" width="320" height="155"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Gk-4Sf" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="0.0" width="343" height="20.333333333333332"/>
+                                        <rect key="frame" x="16" y="0.0" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -123,7 +123,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-9h-rNx">
-                                        <rect key="frame" x="16" y="38.333333333333343" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="38.5" width="288" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -132,7 +132,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysQ-bx-Wvd" customClass="LocalisableUILabel" customModule="TakeUrPill" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="86.333333333333314" width="343" height="20.333333333333329"/>
+                                        <rect key="frame" x="16" y="86.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -141,7 +141,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-eo-yOg">
-                                        <rect key="frame" x="16" y="124.66666666666669" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="125" width="288" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
@@ -162,11 +162,12 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-8Q-0oa" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
-                                <rect key="frame" x="16" y="350.66666666666669" width="90" height="44"/>
+                                <rect key="frame" x="115" y="322" width="90" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Dx6-Ug-tcN"/>
                                     <constraint firstAttribute="height" constant="44" id="dpH-qr-fgW"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.button.save.title"/>
@@ -175,71 +176,93 @@
                                     <action selector="saveButtonPressed:" destination="XoZ-1h-3rd" eventType="touchUpInside" id="Xia-u7-o6Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R96-fw-G15" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
-                                <rect key="frame" x="269" y="350.66666666666669" width="90" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="9po-zC-0gt"/>
-                                    <constraint firstAttribute="height" constant="44" id="yNi-1e-NFS"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.button.close.title"/>
-                                </userDefinedRuntimeAttributes>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zhq-qs-MN9">
+                                <rect key="frame" x="16" y="374" width="288" height="174"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PillTypeCell" textLabel="a9O-Eh-zMs" detailTextLabel="Mrq-zu-Jr5" style="IBUITableViewCellStyleSubtitle" id="6ZC-hm-PZc">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ZC-hm-PZc" id="VPm-gt-W1g">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a9O-Eh-zMs">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mrq-zu-Jr5">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="Cae-kd-4C8" kind="unwind" unwindAction="unwindToHomeViewControllerWithSegue:" id="S8e-ff-2sl"/>
+                                    <outlet property="dataSource" destination="XoZ-1h-3rd" id="QLD-mj-Bfb"/>
+                                    <outlet property="delegate" destination="XoZ-1h-3rd" id="f7y-RU-L4V"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nTC-Ps-RVe" firstAttribute="width" secondItem="VNy-oL-2yc" secondAttribute="width" id="0bH-lz-TEh"/>
+                            <constraint firstItem="Zhq-qs-MN9" firstAttribute="leading" secondItem="VNy-oL-2yc" secondAttribute="leading" constant="16" id="BL5-I9-8gR"/>
+                            <constraint firstItem="VNy-oL-2yc" firstAttribute="bottom" secondItem="Zhq-qs-MN9" secondAttribute="bottom" constant="20" id="Dog-ZP-DEB"/>
                             <constraint firstItem="MgK-8Q-0oa" firstAttribute="top" secondItem="nTC-Ps-RVe" secondAttribute="bottom" constant="8" id="HOw-sw-ctN"/>
+                            <constraint firstItem="VNy-oL-2yc" firstAttribute="trailing" secondItem="Zhq-qs-MN9" secondAttribute="trailing" constant="16" id="RO5-Ud-qMK"/>
                             <constraint firstItem="nTC-Ps-RVe" firstAttribute="top" secondItem="VNy-oL-2yc" secondAttribute="top" constant="48" id="W77-6f-rXP"/>
-                            <constraint firstItem="MgK-8Q-0oa" firstAttribute="leading" secondItem="VNy-oL-2yc" secondAttribute="leading" constant="16" id="h1e-WX-TXS"/>
-                            <constraint firstItem="R96-fw-G15" firstAttribute="top" secondItem="nTC-Ps-RVe" secondAttribute="bottom" constant="8" id="n5y-Gm-HoY"/>
                             <constraint firstItem="nTC-Ps-RVe" firstAttribute="centerX" secondItem="VNy-oL-2yc" secondAttribute="centerX" id="p2C-pJ-8HV"/>
-                            <constraint firstItem="VNy-oL-2yc" firstAttribute="trailing" secondItem="R96-fw-G15" secondAttribute="trailing" constant="16" id="wJD-BF-YfT"/>
+                            <constraint firstItem="Zhq-qs-MN9" firstAttribute="top" secondItem="MgK-8Q-0oa" secondAttribute="bottom" constant="8" id="pmY-4I-SV9"/>
+                            <constraint firstItem="MgK-8Q-0oa" firstAttribute="centerX" secondItem="nTC-Ps-RVe" secondAttribute="centerX" id="vek-gF-G9k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VNy-oL-2yc"/>
                     </view>
                     <connections>
                         <outlet property="ammountTextField" destination="QxD-eo-yOg" id="hXY-aj-gu7"/>
                         <outlet property="pillNameTextField" destination="EgH-9h-rNx" id="LCD-sp-Cj6"/>
+                        <outlet property="tableView" destination="Zhq-qs-MN9" id="szS-M1-i6Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4v-Px-Sd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Cae-kd-4C8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2108" y="33.733133433283363"/>
+            <point key="canvasLocation" x="2107.5" y="32.74647887323944"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="ei4-v0-Qvx">
             <objects>
                 <viewController storyboardIdentifier="History" id="iMw-Hb-J4R" customClass="HistoryViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VC5-c1-SCj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DWe-dO-4kD">
-                                <rect key="frame" x="16" y="156" width="343" height="522"/>
+                                <rect key="frame" x="16" y="127" width="288" height="341"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" textLabel="CbP-Vh-rDg" detailTextLabel="d36-cW-YEd" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="0Jy-iK-dTo">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="64"/>
+                                        <rect key="frame" x="0.0" y="28" width="288" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Jy-iK-dTo" id="Nan-GF-iDp">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="63.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CbP-Vh-rDg">
-                                                    <rect key="frame" x="15.000000000000004" y="9.6666666666666661" width="37.333333333333336" height="21.666666666666668"/>
+                                                    <rect key="frame" x="15" y="10" width="37.5" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d36-cW-YEd">
-                                                    <rect key="frame" x="14.999999999999996" y="34.666666666666671" width="49.666666666666664" height="17"/>
+                                                    <rect key="frame" x="15" y="34.5" width="50" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -255,7 +278,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-mZ-XRA" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
-                                <rect key="frame" x="16" y="714" width="100" height="44"/>
+                                <rect key="frame" x="16" y="504" width="100" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Xxy-ua-nCO"/>
                                     <constraint firstAttribute="height" constant="44" id="iYX-jx-m0R"/>
@@ -271,7 +294,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYe-nZ-8aO">
-                                <rect key="frame" x="199" y="718.66666666666663" width="160" height="35"/>
+                                <rect key="frame" x="144" y="508.5" width="160" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="VX4-oi-rtD"/>
@@ -307,7 +330,7 @@
                 <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="dJD-jg-kSJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="me9-AY-jMY">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="0.21145932310000001" green="0.47767158770000001" blue="0.91522648360000003" alpha="1" colorSpace="calibratedRGB"/>

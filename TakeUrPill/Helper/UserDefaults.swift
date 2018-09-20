@@ -38,4 +38,9 @@ extension UserDefaults {
         get { return integer(forKey: #function) }
         set { set(newValue, forKey: #function) }
     }
+
+    var pillsList: Data? {
+        get { return data(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
 }

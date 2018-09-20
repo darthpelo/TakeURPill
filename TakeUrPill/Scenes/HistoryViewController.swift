@@ -22,8 +22,8 @@ final class HistoryViewController: BaseViewController {
     var configure: ConfigureHistory?
 
     private var siriVC: INUIAddVoiceShortcutViewController?
-    private var list: [Pill] = []
     private lazy var notification = NotificationCenter.default
+    private var dataSource: TableViewDataSource<Pill>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ final class HistoryViewController: BaseViewController {
         super.viewWillAppear(animated)
 
         if let history = presenter?.getUserHistory() {
-            list = history
+           pillsDidLoad(history)
         }
 
         let siriButton: INUIAddVoiceShortcutButton = INUIAddVoiceShortcutButton(style: INUIAddVoiceShortcutButtonStyle.white)
@@ -70,7 +70,7 @@ final class HistoryViewController: BaseViewController {
 
     @IBAction func eraseHistoryButtonPressed(_ sender: Any) {
         if let presenter = presenter, presenter.eraseUserHistory() {
-            list.removeAll()
+            dataSource?.cleanDataSource()
             tableView.reloadData()
         } else {
             logger("Error erasing file")
@@ -79,7 +79,7 @@ final class HistoryViewController: BaseViewController {
 
     @objc func reload() {
         if let history = presenter?.getUserHistory() {
-            list = history
+            pillsDidLoad(history)
             tableView.reloadData()
         }
     }
@@ -92,24 +92,10 @@ final class HistoryViewController: BaseViewController {
             self.present(siriVC, animated: true, completion: nil)
         }
     }
-}
 
-extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath)
-
-        let pill = list[indexPath.row]
-
-        cell.textLabel?.text = pill.name
-        cell.detailTextLabel?.text = DateFormatter.localizedString(from: Date(timeIntervalSince1970: pill.timestamp),
-                                                                   dateStyle: .medium,
-                                                                   timeStyle: .medium)
-
-        return cell
+    private func pillsDidLoad(_ pills: [Pill]) {
+        dataSource = .make(for: pills)
+        tableView.dataSource = dataSource
     }
 }
 

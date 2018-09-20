@@ -11,7 +11,7 @@ import Intents
 import IntentsUI
 
 protocol HomeManageble {
-    func pillTook()
+    func pillTook(_ pill: PillType)
     func getLastPillName() -> String?
     func showUserHistory() -> Bool
     func showSiriViewController() -> INUIAddVoiceShortcutViewController?
@@ -24,13 +24,10 @@ struct HomePresenter: HomeManageble {
         self.storage = storage
     }
 
-    func pillTook() {
-        guard let pillName = UserDefaults.standard.pillName else { return }
-        guard let ammount = UserDefaults.standard.pillAmmount else { return }
-
+    func pillTook(_ pill: PillType) {
         let pill = Pill(timestamp: Date().timeIntervalSince1970,
-                        ammount: ammount,
-                        name: pillName)
+                        ammount: pill.ammount,
+                        name: pill.name)
         if storage.store(pill) == false {
             logger("Failed to store pill")
         }

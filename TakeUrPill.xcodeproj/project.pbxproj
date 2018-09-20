@@ -34,6 +34,8 @@
 		D9A211D7211AE57400F919C2 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A211D6211AE57400F919C2 /* HomeFlowController.swift */; };
 		D9A211D9211AEE6900F919C2 /* HistoryFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A211D8211AEE6900F919C2 /* HistoryFlowController.swift */; };
 		D9A211DB211B257100F919C2 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A211DA211B257100F919C2 /* NotificationCenterExtension.swift */; };
+		D9D950AB215142B300820E73 /* PillsPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D950AA215142B200820E73 /* PillsPickerView.xib */; };
+		D9D950AD215152F700820E73 /* PillsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D950AC215152F700820E73 /* PillsPickerView.swift */; };
 		D9E604AE20FD166F003A1DA1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604AD20FD166F003A1DA1 /* IntentHandler.swift */; };
 		D9E604B220FD166F003A1DA1 /* TakePillIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9E604AB20FD166F003A1DA1 /* TakePillIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D9E604B820FD16D1003A1DA1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DA98120F93C0B00162D76 /* Model.swift */; };
@@ -42,6 +44,7 @@
 		D9E604BC20FDD312003A1DA1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E604BA20FDD2B8003A1DA1 /* Logger.swift */; };
 		D9E7A95F2114A5400011A212 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9786303210E55460029A4DF /* UserDefaults.swift */; };
 		D9E7A96221182F230011A212 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */; };
+		D9EFCF13214FAC78006A1695 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EFCF12214FAC78006A1695 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,8 @@
 		D9A211D6211AE57400F919C2 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
 		D9A211D8211AEE6900F919C2 /* HistoryFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryFlowController.swift; sourceTree = "<group>"; };
 		D9A211DA211B257100F919C2 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		D9D950AA215142B200820E73 /* PillsPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PillsPickerView.xib; sourceTree = "<group>"; };
+		D9D950AC215152F700820E73 /* PillsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsPickerView.swift; sourceTree = "<group>"; };
 		D9E604A620FD1410003A1DA1 /* TakeUrPill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakeUrPill.entitlements; sourceTree = "<group>"; };
 		D9E604AB20FD166F003A1DA1 /* TakePillIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TakePillIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E604AD20FD166F003A1DA1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		D9E604B620FD167B003A1DA1 /* TakePillIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakePillIntents.entitlements; sourceTree = "<group>"; };
 		D9E604BA20FDD2B8003A1DA1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D9EFCF12214FAC78006A1695 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 				D9A211CD2119D6A600F919C2 /* HomePresenter.swift */,
 				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
 				D99D5AA320F896B800E3966F /* StartSessionViewController.swift */,
+				D9D950AC215152F700820E73 /* PillsPickerView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -160,6 +167,7 @@
 			children = (
 				D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */,
 				D99D5A8720F8851400E3966F /* Main.storyboard */,
+				D9D950AA215142B200820E73 /* PillsPickerView.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			children = (
 				D94DA98820F94D9800162D76 /* StorageService.swift */,
 				D9018E0D211C45AE001F3EDF /* SiriService.swift */,
+				D9EFCF12214FAC78006A1695 /* TableViewDataSource.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -409,6 +418,7 @@
 				D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */,
 				D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */,
 				D99D5A8920F8851400E3966F /* Main.storyboard in Resources */,
+				D9D950AB215142B300820E73 /* PillsPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,12 +471,14 @@
 				D94DA97720F91CB000162D76 /* LocalizableViews.swift in Sources */,
 				D9A211D02119E59700F919C2 /* HistoryPresenter.swift in Sources */,
 				D9E604BB20FDD2B8003A1DA1 /* Logger.swift in Sources */,
+				D9EFCF13214FAC78006A1695 /* TableViewDataSource.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
 				D9A211D3211AE00D00F919C2 /* FlowController.swift in Sources */,
 				D9786306210E55930029A4DF /* UserSession.swift in Sources */,
 				D9786304210E55460029A4DF /* UserDefaults.swift in Sources */,
 				D9A211CE2119D6A600F919C2 /* HomePresenter.swift in Sources */,
 				D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */,
+				D9D950AD215152F700820E73 /* PillsPickerView.swift in Sources */,
 				D9018E18211C6A83001F3EDF /* Intents.intentdefinition in Sources */,
 				D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */,
 			);

@@ -43,3 +43,16 @@ extension Pill {
                   name: name)
     }
 }
+
+struct PillType: Codable {
+    var ammount: Int
+    var name: String
+}
+
+extension PillType: Equatable {
+    static func == (lhs: PillType, rhs: PillType) -> Bool {
+        return
+            lhs.ammount == rhs.ammount &&
+                lhs.name == rhs.name
+    }
+}

@@ -44,6 +44,8 @@ final class HomeFlowController: FlowController, HomeController {
     }
 
     func show() {
+        configure.popToRoot()
+        
         let historyConf = FlowConfigureImplementation(window: configure.window,
                                                       navigationController: configure.navigationController,
                                                       parent: self)

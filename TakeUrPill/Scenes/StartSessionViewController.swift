@@ -12,6 +12,8 @@ final class StartSessionViewController: BaseViewController {
 
     @IBOutlet weak var pillNameTextField: UITextField!
     @IBOutlet weak var ammountTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    private var dataSource: TableViewDataSource<PillType>?
 
     private var name: String?
     private var ammount: String?
@@ -23,18 +25,44 @@ final class StartSessionViewController: BaseViewController {
         self.title = "Settings"
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        pillsDidLoad(self.getUserHistory())
+        tableView.reloadData()
+    }
+
     @IBAction func saveButtonPressed(_ sender: Any) {
         guard let name = self.name else {
-            let alertView = UIAlertController(title: nil, message: "Name must be fill", preferredStyle: .alert)
+            let alertView = UIAlertController(title: nil,
+                                              message: NSLocalizedString("startSession.alert.name", comment: ""),
+                                              preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertView, animated: true, completion: nil)
+            return
+        }
+
+        guard let ammount = ammount, ammount.isNumber == true else {
+            let alertView = UIAlertController(title: nil,
+                                              message: NSLocalizedString("startSession.alert.ammount", comment: ""),
+                                              preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alertView, animated: true, completion: nil)
             return
         }
 
         UserDefaults.standard.pillName = name
-        UserDefaults.standard.pillAmmount = Int(ammount ?? "1")
+        UserDefaults.standard.pillAmmount = Int(ammount)
 
-        self.dismiss(animated: true, completion: nil)
+        Storage().store(PillType(ammount: Int(ammount)!, name: name))
+
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+
+    private func pillsDidLoad(_ pills: [PillType]) {
+        dataSource = .make(for: pills)
+        tableView.dataSource = dataSource
+        dataSource?.delegate = self
     }
 }
 
@@ -50,5 +78,39 @@ extension StartSessionViewController: UITextFieldDelegate {
             ammount = text + string
         }
         return true
+    }
+}
+
+extension String {
+    var isNumber: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+    }
+}
+
+extension StartSessionViewController {
+    func eraseUserHistory() -> Bool {
+        return Storage().deleteTypes()
+    }
+
+    func getUserHistory() -> [PillType] {
+        var list: [PillType] = []
+
+        do {
+            let data = try Storage().readTypes()
+            let decoder = JSONDecoder()
+            list = try decoder.decode([PillType].self, from: data)
+        } catch {}
+
+        return list.sorted { $0.name > $1.name }
+    }
+    
+    func removePillType(at: Int) {
+        Storage().deleteType(at: at)
+    }
+}
+
+extension StartSessionViewController: RowUpdateProtocol {
+    func removeModel(at: Int) {
+        self.removePillType(at: at)
     }
 }

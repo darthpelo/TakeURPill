@@ -18,6 +18,8 @@
 "startSession.label.name.title" = "Pill's Name";
 "startSession.label.ammount.title" = "Number of pills";
 "startSession.button.save.title" = "Save";
+"startSession.alert.name" = "Name must be fill";
+"startSession.alert.ammount" = "Number of pills must be fill";
 
 "history.button.close.title" = "Close";
 "history.button.erase.title" = "Erase";
