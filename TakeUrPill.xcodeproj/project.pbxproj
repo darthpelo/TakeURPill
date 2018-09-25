@@ -687,16 +687,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TakeUrPill/TakeUrPill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill-Dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -709,16 +709,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TakeUrPill/TakeUrPill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = "$(SRCROOT)/TakeUrPill/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "TakrURPill-Dist";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -771,17 +771,17 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TakePillIntents/TakePillIntents.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6NX9CC2PVJ;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = TakePillIntents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPill.TakePillIntents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakePillIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill TakePillIntents-Dev";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -793,17 +793,17 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TakePillIntents/TakePillIntents.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6NX9CC2PVJ;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = TakePillIntents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPill.TakePillIntents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakePillIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill TakePillIntents-Dist";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
