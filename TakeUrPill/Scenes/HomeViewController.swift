@@ -19,6 +19,7 @@ final class HomeViewController: BaseViewController {
     @IBOutlet weak var takePillButton: UIButton!
     @IBOutlet weak var siriButtonContainer: UIView!
     @IBOutlet weak var intentSuggestionLabel: UILabel!
+    @IBOutlet weak var versionLabel: UILabel!
     
     private var siriVC: INUIAddVoiceShortcutViewController?
     
@@ -45,6 +46,7 @@ final class HomeViewController: BaseViewController {
                                              object: nil)
 
         self.title = NSLocalizedString("home.title", comment: "")
+        versionLabel.text = Bundle.main.versionNumber + " (" + Bundle.main.buildNumber + ")"
     }
     
     @IBAction func startButtonPressed(_ sender: Any) {
@@ -167,5 +169,14 @@ extension HomeViewController: INUIAddVoiceShortcutViewControllerDelegate {
     func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
         logger("no shortcut created")
         siriVC?.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension Bundle {
+    var versionNumber: String {
+        return infoDictionary?["CFBundleShortVersionString"] as? String ?? "Error 💥"
+    }
+    var buildNumber: String {
+        return infoDictionary?["CFBundleVersion"] as? String ?? "Error 💥"
     }
 }

@@ -37,16 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let notificationName = Notification.Name(rawValue: "com.alessioroberto.TakeUrPill.history")
             NotificationCenter.default.post(name: notificationName, object: nil)
             return true
-        case "TakePillIntent":
-            guard let intent = activity.interaction?.intent as? TakePillIntent,
-                let model = Pill(from: intent) else {
-                    return false
-            }
-            let storage = Storage()
-            if storage.store(model) {
-                return true
-            }
-            return false
         default:()
         }
         return false

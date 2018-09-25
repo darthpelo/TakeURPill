@@ -23,7 +23,7 @@ enum HistoryError: Error {
 }
 
 final class Storage: StorageService {
-    private let suitName = "group.com.alessioroberto.TakeURPill"
+    private let suitName = "group.com.alessioroberto.TakeURPill.Shared"
 
     func readHistory() throws -> Data {
         if let userDefaults = UserDefaults(suiteName: suitName),
