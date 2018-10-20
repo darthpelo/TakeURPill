@@ -22,6 +22,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-pF-jV2" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                         <rect key="frame" x="27" y="0.0" width="201" height="60"/>
+                                        <accessibility key="accessibilityConfiguration" label="add pill"/>
                                         <state key="normal" backgroundImage="setting">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -34,6 +35,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNS-C6-dQX" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                         <rect key="frame" x="27" y="68" width="201" height="60"/>
+                                        <accessibility key="accessibilityConfiguration" label="took my pill"/>
                                         <state key="normal" backgroundImage="tookpill">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -46,6 +48,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-Ih-Wlb" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                         <rect key="frame" x="27" y="136" width="201" height="60"/>
+                                        <accessibility key="accessibilityConfiguration" label="history"/>
                                         <state key="normal" backgroundImage="history">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -142,6 +145,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-9h-rNx">
                                         <rect key="frame" x="16" y="38.5" width="288" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="insert name"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -160,6 +164,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-eo-yOg">
                                         <rect key="frame" x="16" y="125" width="288" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="insert ammount"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
@@ -181,6 +186,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-8Q-0oa" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                 <rect key="frame" x="115" y="322" width="90" height="44"/>
+                                <accessibility key="accessibilityConfiguration" label="save"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Dx6-Ug-tcN"/>
                                     <constraint firstAttribute="height" constant="44" id="dpH-qr-fgW"/>

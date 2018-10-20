@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22028258F3C110E11C06B353 /* Pods_TakeUrPillUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E19745796E2A3CFE8FF36 /* Pods_TakeUrPillUITests.framework */; };
+		4C82EF6721725BEE00A248C3 /* TakeUrPillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */; };
+		4C82EF702172618900A248C3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */; };
+		4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
+		4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
+		5C4223EA792404E4B152BBE0 /* Pods_TakeUrPill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */; };
+		93B39EF05E712B460769757B /* Pods_TakeUrPillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */; };
+		C69EDCFA1C6A463A0E043805 /* Pods_TakePillIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */; };
 		D9018E0E211C45AE001F3EDF /* SiriService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9018E0D211C45AE001F3EDF /* SiriService.swift */; };
 		D9018E0F211C45DC001F3EDF /* SiriService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9018E0D211C45AE001F3EDF /* SiriService.swift */; };
 		D9018E18211C6A83001F3EDF /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D9018E1B211C6A83001F3EDF /* Intents.intentdefinition */; };
@@ -48,6 +56,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C82EF6921725BEE00A248C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99D5A7820F8851400E3966F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99D5A7F20F8851400E3966F;
+			remoteInfo = TakeUrPill;
+		};
 		D99D5A9520F8851800E3966F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D99D5A7820F8851400E3966F /* Project object */;
@@ -79,6 +94,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00C4D89E2B98485077763C36 /* Pods-TakeUrPill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPill.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill.release.xcconfig"; sourceTree = "<group>"; };
+		0796105B922CED957D3FAC8E /* Pods-TakeUrPillUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPillUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePillIntents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPillTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82EF6421725BEE00A248C3 /* TakeUrPillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUrPillUITests.swift; sourceTree = "<group>"; };
+		4C82EF6821725BEE00A248C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6249DD538F322E71ED94EBF8 /* Pods-TakeUrPillTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPillTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7566A5A4F887BB2AEC5A5DE3 /* Pods-TakeUrPill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill.debug.xcconfig"; sourceTree = "<group>"; };
+		7603FF5767921E4C13AF8605 /* Pods-TakePillIntents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePillIntents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakePillIntents/Pods-TakePillIntents.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4AA5F89624B70863171902 /* Pods-TakePillIntents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePillIntents.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakePillIntents/Pods-TakePillIntents.release.xcconfig"; sourceTree = "<group>"; };
+		AAA48B158323EF5D83F497E4 /* Pods-TakeUrPillTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPillTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests.release.xcconfig"; sourceTree = "<group>"; };
+		B03E19745796E2A3CFE8FF36 /* Pods_TakeUrPillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9018E0D211C45AE001F3EDF /* SiriService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriService.swift; sourceTree = "<group>"; };
 		D9018E1A211C6A83001F3EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = en; path = en.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		D9018E1D211C6A87001F3EDF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Intents.strings; sourceTree = "<group>"; };
@@ -122,13 +153,23 @@
 		D9E604BA20FDD2B8003A1DA1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D9E7A96121182F230011A212 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		D9EFCF12214FAC78006A1695 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		E2A5F84CAB0881005345CEFB /* Pods-TakeUrPillUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPillUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C82EF6121725BEE00A248C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22028258F3C110E11C06B353 /* Pods_TakeUrPillUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D99D5A7D20F8851400E3966F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4223EA792404E4B152BBE0 /* Pods_TakeUrPill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B39EF05E712B460769757B /* Pods_TakeUrPillTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,12 +185,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69EDCFA1C6A463A0E043805 /* Pods_TakePillIntents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25E9857A1670079A1B76D22F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7603FF5767921E4C13AF8605 /* Pods-TakePillIntents.debug.xcconfig */,
+				7E4AA5F89624B70863171902 /* Pods-TakePillIntents.release.xcconfig */,
+				7566A5A4F887BB2AEC5A5DE3 /* Pods-TakeUrPill.debug.xcconfig */,
+				00C4D89E2B98485077763C36 /* Pods-TakeUrPill.release.xcconfig */,
+				6249DD538F322E71ED94EBF8 /* Pods-TakeUrPillTests.debug.xcconfig */,
+				AAA48B158323EF5D83F497E4 /* Pods-TakeUrPillTests.release.xcconfig */,
+				E2A5F84CAB0881005345CEFB /* Pods-TakeUrPillUITests.debug.xcconfig */,
+				0796105B922CED957D3FAC8E /* Pods-TakeUrPillUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C82EF6521725BEE00A248C3 /* TakeUrPillUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */,
+				4C82EF6821725BEE00A248C3 /* Info.plist */,
+			);
+			path = TakeUrPillUITests;
+			sourceTree = "<group>";
+		};
+		91A58090CD11143C22518697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */,
+				1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */,
+				34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */,
+				B03E19745796E2A3CFE8FF36 /* Pods_TakeUrPillUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D94DA97A20F93B0700162D76 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +253,7 @@
 		D94DA97C20F93B3700162D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */,
 				D99D5A8A20F8851800E3966F /* Assets.xcassets */,
 				D99D5A8F20F8851800E3966F /* Info.plist */,
 				D9018E1B211C6A83001F3EDF /* Intents.intentdefinition */,
@@ -186,6 +265,7 @@
 		D94DA97D20F93B4800162D76 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */,
 				D94DA97620F91CB000162D76 /* LocalizableViews.swift */,
 				D9E604BA20FDD2B8003A1DA1 /* Logger.swift */,
 				D9786303210E55460029A4DF /* UserDefaults.swift */,
@@ -219,7 +299,10 @@
 				D9E604AC20FD166F003A1DA1 /* TakePillIntents */,
 				D99D5A8220F8851400E3966F /* TakeUrPill */,
 				D99D5A9720F8851800E3966F /* TakeUrPillTests */,
+				4C82EF6521725BEE00A248C3 /* TakeUrPillUITests */,
 				D99D5A8120F8851400E3966F /* Products */,
+				25E9857A1670079A1B76D22F /* Pods */,
+				91A58090CD11143C22518697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +312,7 @@
 				D99D5A8020F8851400E3966F /* TakeUrPill.app */,
 				D99D5A9420F8851800E3966F /* TakeUrPillTests.xctest */,
 				D9E604AB20FD166F003A1DA1 /* TakePillIntents.appex */,
+				4C82EF6421725BEE00A248C3 /* TakeUrPillUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,15 +377,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C82EF6321725BEE00A248C3 /* TakeUrPillUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C82EF6D21725BEE00A248C3 /* Build configuration list for PBXNativeTarget "TakeUrPillUITests" */;
+			buildPhases = (
+				A27F1E2C79C2833C027797FE /* [CP] Check Pods Manifest.lock */,
+				4C82EF6021725BEE00A248C3 /* Sources */,
+				4C82EF6121725BEE00A248C3 /* Frameworks */,
+				4C82EF6221725BEE00A248C3 /* Resources */,
+				71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C82EF6A21725BEE00A248C3 /* PBXTargetDependency */,
+			);
+			name = TakeUrPillUITests;
+			productName = TakeUrPillUITests;
+			productReference = 4C82EF6421725BEE00A248C3 /* TakeUrPillUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D99D5A7F20F8851400E3966F /* TakeUrPill */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99D5A9D20F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPill" */;
 			buildPhases = (
+				C191D72611FCD7B7808A2893 /* [CP] Check Pods Manifest.lock */,
 				D99D5A7C20F8851400E3966F /* Sources */,
 				D99D5A7D20F8851400E3966F /* Frameworks */,
 				D99D5A7E20F8851400E3966F /* Resources */,
 				D9ACFCAB20FB7F3400E400B3 /* Embed App Extensions */,
 				D90AC0C42122D90500FEF873 /* ShellScript */,
+				8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,9 +423,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99D5AA020F8851800E3966F /* Build configuration list for PBXNativeTarget "TakeUrPillTests" */;
 			buildPhases = (
+				276A55E0F37DA720737D8315 /* [CP] Check Pods Manifest.lock */,
 				D99D5A9020F8851800E3966F /* Sources */,
 				D99D5A9120F8851800E3966F /* Frameworks */,
 				D99D5A9220F8851800E3966F /* Resources */,
+				20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +443,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E604B320FD166F003A1DA1 /* Build configuration list for PBXNativeTarget "TakePillIntents" */;
 			buildPhases = (
+				A71E805CA72244A273C99C2D /* [CP] Check Pods Manifest.lock */,
 				D9E604A720FD166F003A1DA1 /* Sources */,
 				D9E604A820FD166F003A1DA1 /* Frameworks */,
 				D9E604A920FD166F003A1DA1 /* Resources */,
@@ -358,6 +467,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Alessio Roberto";
 				TargetAttributes = {
+					4C82EF6321725BEE00A248C3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D99D5A7F20F8851400E3966F;
+					};
 					D99D5A7F20F8851400E3966F = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
@@ -404,11 +517,19 @@
 				D99D5A7F20F8851400E3966F /* TakeUrPill */,
 				D99D5A9320F8851800E3966F /* TakeUrPillTests */,
 				D9E604AA20FD166F003A1DA1 /* TakePillIntents */,
+				4C82EF6321725BEE00A248C3 /* TakeUrPillUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4C82EF6221725BEE00A248C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D99D5A7E20F8851400E3966F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +540,7 @@
 				D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */,
 				D99D5A8920F8851400E3966F /* Main.storyboard in Resources */,
 				D9D950AB215142B300820E73 /* PillsPickerView.xib in Resources */,
+				4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +555,145 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276A55E0F37DA720737D8315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeUrPillTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A27F1E2C79C2833C027797FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeUrPillUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A71E805CA72244A273C99C2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakePillIntents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C191D72611FCD7B7808A2893 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeUrPill-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D90AC0C42122D90500FEF873 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +710,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C82EF6021725BEE00A248C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C82EF6721725BEE00A248C3 /* TakeUrPillUITests.swift in Sources */,
+				4C82EF702172618900A248C3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D99D5A7C20F8851400E3966F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +774,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C82EF6A21725BEE00A248C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99D5A7F20F8851400E3966F /* TakeUrPill */;
+			targetProxy = 4C82EF6921725BEE00A248C3 /* PBXContainerItemProxy */;
+		};
 		D99D5A9620F8851800E3966F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D99D5A7F20F8851400E3966F /* TakeUrPill */;
@@ -562,6 +831,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4C82EF6B21725BEE00A248C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A5F84CAB0881005345CEFB /* Pods-TakeUrPillUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5S624D99;
+				INFOPLIST_FILE = TakeUrPillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakeUrPillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeUrPill;
+			};
+			name = Debug;
+		};
+		4C82EF6C21725BEE00A248C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0796105B922CED957D3FAC8E /* Pods-TakeUrPillUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5S624D99;
+				INFOPLIST_FILE = TakeUrPillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakeUrPillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeUrPill;
+			};
+			name = Release;
+		};
 		D99D5A9B20F8851800E3966F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -682,6 +991,7 @@
 		};
 		D99D5A9E20F8851800E3966F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7566A5A4F887BB2AEC5A5DE3 /* Pods-TakeUrPill.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -704,6 +1014,7 @@
 		};
 		D99D5A9F20F8851800E3966F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C4D89E2B98485077763C36 /* Pods-TakeUrPill.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -726,6 +1037,7 @@
 		};
 		D99D5AA120F8851800E3966F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6249DD538F322E71ED94EBF8 /* Pods-TakeUrPillTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -747,6 +1059,7 @@
 		};
 		D99D5AA220F8851800E3966F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA48B158323EF5D83F497E4 /* Pods-TakeUrPillTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -768,6 +1081,7 @@
 		};
 		D9E604B420FD166F003A1DA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7603FF5767921E4C13AF8605 /* Pods-TakePillIntents.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TakePillIntents/TakePillIntents.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -790,6 +1104,7 @@
 		};
 		D9E604B520FD166F003A1DA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4AA5F89624B70863171902 /* Pods-TakePillIntents.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TakePillIntents/TakePillIntents.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -813,6 +1128,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C82EF6D21725BEE00A248C3 /* Build configuration list for PBXNativeTarget "TakeUrPillUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C82EF6B21725BEE00A248C3 /* Debug */,
+				4C82EF6C21725BEE00A248C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D99D5A7B20F8851400E3966F /* Build configuration list for PBXProject "TakeUrPill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

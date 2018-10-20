@@ -17,6 +17,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-vb-3zs">
                     <rect key="frame" x="313" y="20" width="46" height="30"/>
+                    <accessibility key="accessibilityConfiguration" label="done"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="doneButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="jhz-uA-uI6"/>
@@ -24,6 +25,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai3-uR-i9X">
                     <rect key="frame" x="16" y="20" width="46" height="30"/>
+                    <accessibility key="accessibilityConfiguration" label="cancel"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="cancelButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="4dp-cn-5tU"/>
