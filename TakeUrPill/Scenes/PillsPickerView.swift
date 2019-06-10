@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+typealias Cancelled = (() -> Void)
+
 class PillsPickerView: UIView {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
@@ -20,9 +22,11 @@ class PillsPickerView: UIView {
     typealias PillSelected = (PillType) -> Void
     
     private var pillSelected: PillSelected?
-    private var cancelTapped: (() -> Void)?
+    private var cancelTapped: Cancelled?
     
     private var parentView: UIView?
+    
+    private var presenter: PillsPickerPresenter?
     
     @IBAction func doneButtonPressed(_ sender: AnyObject) {
         if let pill = pill {
@@ -34,7 +38,7 @@ class PillsPickerView: UIView {
         cancelTapped?()
     }
     
-    func loadPickerView() -> PillsPickerView? {
+    func loadPickerView(presenter: PillsPickerPresenter = PillsPickerPresenter()) -> PillsPickerView? {
         //Get all views in the xib
         let allViewsInXibArray = Bundle.main.loadNibNamed("PillsPickerView", owner: self, options: nil)
         
@@ -46,10 +50,12 @@ class PillsPickerView: UIView {
         myView.frame.origin.y = UIScreen.main.bounds.height
         myView.frame.size.width = UIScreen.main.bounds.width
         
+        myView.presenter = presenter
+        
         return myView
     }
     
-    func configure(onView: UIView, onDone: @escaping PillSelected, onCancel: @escaping () -> Void) {
+    func configure(onView: UIView, onDone: @escaping PillSelected, onCancel: @escaping Cancelled) {
         pillSelected = onDone
         cancelTapped = onCancel
         parentView = onView
@@ -58,8 +64,11 @@ class PillsPickerView: UIView {
         
         self.frame.origin.y = onView.frame.size.height
         
-        doneButton.setTitle("Done", for: .normal)
-        cancelButton.setTitle("Cancel", for: .normal)
+        guard let presenter = presenter else { return }
+        
+        let texts = presenter.getButtonsText()
+        doneButton.setTitle(texts.done, for: .normal)
+        cancelButton.setTitle(texts.cancel, for: .normal)
         
         loadPills()
         
@@ -73,19 +82,20 @@ class PillsPickerView: UIView {
             return
         }
         
-        UIView.animate(withDuration: 0.3, animations: { [weak self] in
-            guard let self = self else { return }
-            if show {
-                self.isHidden = false
-                self.frame.origin.y = height - self.frame.size.height
-                if self.pills.isEmpty {
-                    self.doneButton.isEnabled = false
-                } else {
-                    self.doneButton.isEnabled = true
-                }
-            } else {
-                self.frame.origin.y = height
-            }
+        UIView.animate(withDuration: 0.3,
+                       animations: { [weak self] in
+                        guard let self = self else { return }
+                        if show {
+                            self.isHidden = false
+                            self.frame.origin.y = height - self.frame.size.height
+                            if self.pills.isEmpty {
+                                self.doneButton.isEnabled = false
+                            } else {
+                                self.doneButton.isEnabled = true
+                            }
+                        } else {
+                            self.frame.origin.y = height
+                        }
         }) { [weak self] flag in
             guard let self = self else { return }
             self.isHidden = show == false ? true : false
@@ -93,21 +103,9 @@ class PillsPickerView: UIView {
     }
     
     private func loadPills() {
-        pills = getUserHistory()
+        pills = presenter?.getUserHistory() ?? []
         
         pill = pills.isEmpty ? nil : pills[0]
-    }
-    
-    private func getUserHistory() -> [PillType] {
-        var list: [PillType] = []
-        
-        do {
-            let data = try Storage().readTypes()
-            let decoder = JSONDecoder()
-            list = try decoder.decode([PillType].self, from: data)
-        } catch {}
-        
-        return list.sorted { $0.name > $1.name }
     }
 }
 
@@ -127,5 +125,28 @@ extension PillsPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pill = pills[row]
+    }
+}
+
+struct PillsPickerPresenter {
+    private var storage: Storage?
+    
+    init(storage: Storage = Storage()) {
+        self.storage = storage
+    }
+    
+    func getButtonsText() -> (done: String, cancel: String) {
+        return ("Done", "Cancel")
+    }
+    
+    func getUserHistory() -> [PillType] {
+        do {
+            guard let data = try storage?.readTypes() else { return [] }
+            let decoder = JSONDecoder()
+            let list = try decoder.decode([PillType].self, from: data)
+            return list.sorted { $0.name > $1.name }
+        } catch {
+            return []
+        }
     }
 }

@@ -15,11 +15,11 @@ struct ConfigureHome {
 
 final class HomeViewController: BaseViewController {
     
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var takePillButton: UIButton!
-    @IBOutlet weak var siriButtonContainer: UIView!
-    @IBOutlet weak var intentSuggestionLabel: UILabel!
-    @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet private weak var startButton: UIButton!
+    @IBOutlet private weak var takePillButton: UIButton!
+    @IBOutlet private weak var siriButtonContainer: UIView!
+    @IBOutlet private weak var intentSuggestionLabel: UILabel!
+    @IBOutlet private weak var versionLabel: UILabel!
     
     private var siriVC: INUIAddVoiceShortcutViewController?
     
@@ -49,15 +49,16 @@ final class HomeViewController: BaseViewController {
         versionLabel.text = Bundle.main.versionNumber + " (" + Bundle.main.buildNumber + ")"
     }
     
-    @IBAction func startButtonPressed(_ sender: Any) {
+    @IBAction func timerButtonPressed(_ sender: Any) {
+        showTimer()
     }
     
-    @IBAction func takePillButtonPressed(_ sender: Any) {
+    @IBAction private func takePillButtonPressed(_ sender: Any) {
         configurePickerView()
         pickerView?.isTo(show: true)
     }
     
-    @IBAction func historyButtonPressed(_ sender: Any) {
+    @IBAction private func historyButtonPressed(_ sender: Any) {
         showHistory()
     }
     
@@ -145,11 +146,15 @@ extension HomeViewController {
     }
     
     private func showHistory() {
-        configure?.controller.show()
+        configure?.controller.showHistory()
     }
     
     private func pillTook(_ pill: PillType) {
         presenter?.pillTook(pill)
+    }
+    
+    private func showTimer() {
+        configure?.controller.showTimer()
     }
 }
 

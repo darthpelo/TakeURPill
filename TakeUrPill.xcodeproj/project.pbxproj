@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		22028258F3C110E11C06B353 /* Pods_TakeUrPillUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E19745796E2A3CFE8FF36 /* Pods_TakeUrPillUITests.framework */; };
+		4C72B2E6218E448D003706BC /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72B2E5218E448D003706BC /* TimerPresenter.swift */; };
+		4C72B2E8218E4B67003706BC /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72B2E7218E4B67003706BC /* TimerViewController.swift */; };
+		4C72B2EA218E50EC003706BC /* TimerFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72B2E9218E50EC003706BC /* TimerFlowController.swift */; };
 		4C82EF6721725BEE00A248C3 /* TakeUrPillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */; };
 		4C82EF702172618900A248C3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */; };
-		4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
-		4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
+		4CF12AED21A1DD7300CBDC5B /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF12AEC21A1DD7300CBDC5B /* Timer.swift */; };
+		4CF12AEF21A1E3E000CBDC5B /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF12AEE21A1E3E000CBDC5B /* DatePickerView.xib */; };
+		4CF12AF121A1E62600CBDC5B /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF12AF021A1E62600CBDC5B /* DatePickerView.swift */; };
 		5C4223EA792404E4B152BBE0 /* Pods_TakeUrPill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */; };
 		93B39EF05E712B460769757B /* Pods_TakeUrPillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */; };
 		C69EDCFA1C6A463A0E043805 /* Pods_TakePillIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */; };
@@ -99,11 +103,16 @@
 		1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePillIntents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPillTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C72B2E5218E448D003706BC /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
+		4C72B2E7218E4B67003706BC /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		4C72B2E9218E50EC003706BC /* TimerFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFlowController.swift; sourceTree = "<group>"; };
 		4C82EF6421725BEE00A248C3 /* TakeUrPillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeUrPillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUrPillUITests.swift; sourceTree = "<group>"; };
 		4C82EF6821725BEE00A248C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
-		4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CF12AEC21A1DD7300CBDC5B /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		4CF12AEE21A1E3E000CBDC5B /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		4CF12AF021A1E62600CBDC5B /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		6249DD538F322E71ED94EBF8 /* Pods-TakeUrPillTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPillTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7566A5A4F887BB2AEC5A5DE3 /* Pods-TakeUrPill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeUrPill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill.debug.xcconfig"; sourceTree = "<group>"; };
 		7603FF5767921E4C13AF8605 /* Pods-TakePillIntents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePillIntents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakePillIntents/Pods-TakePillIntents.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +216,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4C72B2E2218E415A003706BC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */,
+				D94DA98A20F95FE300162D76 /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		4C72B2E3218E416A003706BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9A211CD2119D6A600F919C2 /* HomePresenter.swift */,
+				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C72B2E4218E447D003706BC /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4C72B2E5218E448D003706BC /* TimerPresenter.swift */,
+				4C72B2E7218E4B67003706BC /* TimerViewController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		4C82EF6521725BEE00A248C3 /* TakeUrPillUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,12 +266,12 @@
 		D94DA97A20F93B0700162D76 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D9A211CF2119E59700F919C2 /* HistoryPresenter.swift */,
-				D94DA98A20F95FE300162D76 /* HistoryViewController.swift */,
-				D9A211CD2119D6A600F919C2 /* HomePresenter.swift */,
-				D99D5A8520F8851400E3966F /* HomeViewController.swift */,
+				4C72B2E4218E447D003706BC /* Timer */,
+				4C72B2E2218E415A003706BC /* History */,
+				4C72B2E3218E416A003706BC /* Home */,
 				D99D5AA320F896B800E3966F /* StartSessionViewController.swift */,
 				D9D950AC215152F700820E73 /* PillsPickerView.swift */,
+				4CF12AF021A1E62600CBDC5B /* DatePickerView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -246,6 +282,7 @@
 				D99D5A8C20F8851800E3966F /* LaunchScreen.storyboard */,
 				D99D5A8720F8851400E3966F /* Main.storyboard */,
 				D9D950AA215142B200820E73 /* PillsPickerView.xib */,
+				4CF12AEE21A1E3E000CBDC5B /* DatePickerView.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -253,7 +290,6 @@
 		D94DA97C20F93B3700162D76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */,
 				D99D5A8A20F8851800E3966F /* Assets.xcassets */,
 				D99D5A8F20F8851800E3966F /* Info.plist */,
 				D9018E1B211C6A83001F3EDF /* Intents.intentdefinition */,
@@ -278,6 +314,7 @@
 			children = (
 				D94DA98120F93C0B00162D76 /* Model.swift */,
 				D9786305210E55930029A4DF /* UserSession.swift */,
+				4CF12AEC21A1DD7300CBDC5B /* Timer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +388,7 @@
 				D9A211D8211AEE6900F919C2 /* HistoryFlowController.swift */,
 				D9A211D6211AE57400F919C2 /* HomeFlowController.swift */,
 				D9A211D4211AE0F700F919C2 /* MainFlowController.swift */,
+				4C72B2E9218E50EC003706BC /* TimerFlowController.swift */,
 			);
 			path = FlowController;
 			sourceTree = "<group>";
@@ -385,7 +423,6 @@
 				4C82EF6021725BEE00A248C3 /* Sources */,
 				4C82EF6121725BEE00A248C3 /* Frameworks */,
 				4C82EF6221725BEE00A248C3 /* Resources */,
-				71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,7 +444,6 @@
 				D99D5A7E20F8851400E3966F /* Resources */,
 				D9ACFCAB20FB7F3400E400B3 /* Embed App Extensions */,
 				D90AC0C42122D90500FEF873 /* ShellScript */,
-				8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,7 +463,6 @@
 				D99D5A9020F8851800E3966F /* Sources */,
 				D99D5A9120F8851800E3966F /* Frameworks */,
 				D99D5A9220F8851800E3966F /* Resources */,
-				20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -535,12 +570,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99D5A8E20F8851800E3966F /* LaunchScreen.storyboard in Resources */,
+				4CF12AEF21A1E3E000CBDC5B /* DatePickerView.xib in Resources */,
 				D94DA97320F91C7000162D76 /* Localizable.strings in Resources */,
 				D99D5A8B20F8851800E3966F /* Assets.xcassets in Resources */,
 				D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */,
 				D99D5A8920F8851400E3966F /* Main.storyboard in Resources */,
 				D9D950AB215142B300820E73 /* PillsPickerView.xib in Resources */,
-				4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,33 +590,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		276A55E0F37DA720737D8315 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,46 +612,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A27F1E2C79C2833C027797FE /* [CP] Check Pods Manifest.lock */ = {
@@ -724,8 +698,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A211D7211AE57400F919C2 /* HomeFlowController.swift in Sources */,
+				4C72B2E6218E448D003706BC /* TimerPresenter.swift in Sources */,
 				D9A211DB211B257100F919C2 /* NotificationCenterExtension.swift in Sources */,
 				D9E7A96221182F230011A212 /* UIViewControllerExtension.swift in Sources */,
+				4C72B2E8218E4B67003706BC /* TimerViewController.swift in Sources */,
 				D9A211D9211AEE6900F919C2 /* HistoryFlowController.swift in Sources */,
 				D94DA98220F93C0B00162D76 /* Model.swift in Sources */,
 				D94DA98920F94D9800162D76 /* StorageService.swift in Sources */,
@@ -738,11 +714,14 @@
 				D9EFCF13214FAC78006A1695 /* TableViewDataSource.swift in Sources */,
 				D99D5A8420F8851400E3966F /* AppDelegate.swift in Sources */,
 				D9A211D3211AE00D00F919C2 /* FlowController.swift in Sources */,
+				4CF12AED21A1DD7300CBDC5B /* Timer.swift in Sources */,
 				D9786306210E55930029A4DF /* UserSession.swift in Sources */,
 				D9786304210E55460029A4DF /* UserDefaults.swift in Sources */,
 				D9A211CE2119D6A600F919C2 /* HomePresenter.swift in Sources */,
+				4CF12AF121A1E62600CBDC5B /* DatePickerView.swift in Sources */,
 				D94DA98B20F95FE300162D76 /* HistoryViewController.swift in Sources */,
 				D9D950AD215152F700820E73 /* PillsPickerView.swift in Sources */,
+				4C72B2EA218E50EC003706BC /* TimerFlowController.swift in Sources */,
 				D9018E18211C6A83001F3EDF /* Intents.intentdefinition in Sources */,
 				D99D5AA420F896B800E3966F /* StartSessionViewController.swift in Sources */,
 			);

@@ -43,4 +43,9 @@ extension UserDefaults {
         get { return data(forKey: #function) }
         set { set(newValue, forKey: #function) }
     }
+    
+    var timers: Data? {
+        get { return data(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
 }

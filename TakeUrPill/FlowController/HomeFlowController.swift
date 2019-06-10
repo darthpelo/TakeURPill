@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 
 protocol HomeController {
-    func show()
+    func showHistory()
+    func showTimer()
 }
 
 final class HomeFlowController: FlowController, HomeController {
     private let configure: FlowConfigure
     private var historyFlow: FlowController?
+    private var timerFlow: FlowController?
 
     required init(configure: FlowConfigure) {
         self.configure = configure
@@ -23,6 +25,7 @@ final class HomeFlowController: FlowController, HomeController {
 
     deinit {
         historyFlow = nil
+        timerFlow = nil
     }
 
     func start() {
@@ -43,7 +46,7 @@ final class HomeFlowController: FlowController, HomeController {
         }
     }
 
-    func show() {
+    func showHistory() {
         configure.popToRoot()
         
         let historyConf = FlowConfigureImplementation(window: configure.window,
@@ -53,6 +56,15 @@ final class HomeFlowController: FlowController, HomeController {
         historyFlow?.start()
     }
 
+    func showTimer() {
+        configure.popToRoot()
+        
+        let timerConf = FlowConfigureImplementation(window: configure.window,
+                                                      navigationController: configure.navigationController,
+                                                      parent: self)
+        timerFlow = TimerFlowController(configure: timerConf)
+        timerFlow?.start()
+    }
     // MARK: - Private
 
     private func configure(_ navigationController: UINavigationController) {

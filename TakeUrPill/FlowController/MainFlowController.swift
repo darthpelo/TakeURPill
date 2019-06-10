@@ -13,17 +13,12 @@ final class MainFlowController: FlowController {
 
     private var homeFlow: HomeFlowController?
 
-    private lazy var notificationCenter: NotificationCenter = {
-        NotificationCenter.default
-    }()
-
     required init(configure: FlowConfigure) {
         self.configure = configure
     }
 
     deinit {
         homeFlow = nil
-        notificationCenter.removeObserver(self)
     }
 
     func start() {

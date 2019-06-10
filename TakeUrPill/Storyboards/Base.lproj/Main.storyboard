@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJD-jg-kSJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJD-jg-kSJ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dFN-F0-ZJQ">
-                                <rect key="frame" x="32.5" y="161.5" width="255" height="196"/>
+                                <rect key="frame" x="32.5" y="129.5" width="255" height="260"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-pF-jV2" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
                                         <rect key="frame" x="27" y="0.0" width="201" height="60"/>
@@ -46,8 +46,19 @@
                                             <action selector="takePillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezp-MK-uSZ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bre-YV-au6" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="136" width="197" height="56"/>
+                                        <accessibility key="accessibilityConfiguration" label="timer"/>
+                                        <state key="normal" backgroundImage="timer"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value=""/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="timerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5w1-eK-Wgg"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-Ih-Wlb" customClass="LocalisableUIButton" customModule="TakeUrPill" customModuleProvider="target">
-                                        <rect key="frame" x="27" y="136" width="201" height="60"/>
+                                        <rect key="frame" x="27" y="200" width="201" height="60"/>
                                         <accessibility key="accessibilityConfiguration" label="history"/>
                                         <state key="normal" backgroundImage="history">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +76,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnl-FO-RtH">
-                                <rect key="frame" x="80" y="398.5" width="160" height="54"/>
+                                <rect key="frame" x="80" y="430.5" width="160" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="wE2-z5-pU6"/>
@@ -73,7 +84,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-W8-u57">
-                                <rect key="frame" x="32" y="389.5" width="256" height="1"/>
+                                <rect key="frame" x="32" y="421.5" width="256" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="1" id="fD3-L9-4he"/>
                                 </constraints>
@@ -117,11 +128,64 @@
                         <outlet property="takePillButton" destination="uNS-C6-dQX" id="dd5-is-If3"/>
                         <outlet property="versionLabel" destination="po8-LZ-ZfQ" id="UF8-6P-YLr"/>
                         <segue destination="iMw-Hb-J4R" kind="show" id="LOP-Dc-aR0"/>
+                        <segue destination="7n2-vU-fp4" kind="show" id="Ogr-NR-Sbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.8" y="33.733133433283363"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="N99-Vi-N48">
+            <objects>
+                <viewController storyboardIdentifier="Timer" id="7n2-vU-fp4" customClass="TimerViewController" customModule="TakeUrPill" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZ2-0H-eVf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="grs-bU-2Q0">
+                                <rect key="frame" x="59.5" y="127" width="201" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vz-eu-ccP">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="60"/>
+                                        <state key="normal" backgroundImage="tookpill"/>
+                                        <connections>
+                                            <action selector="pillButtonPressed:" destination="7n2-vU-fp4" eventType="touchUpInside" id="vN1-Z2-5EE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-jM-x4q">
+                                        <rect key="frame" x="0.0" y="70" width="201" height="56"/>
+                                        <state key="normal" backgroundImage="timer"/>
+                                        <connections>
+                                            <action selector="timerButtonPressed:" destination="7n2-vU-fp4" eventType="touchUpInside" id="pA2-OQ-5oV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0e-LG-oT1">
+                                <rect key="frame" x="16" y="274" width="288" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o0e-LG-oT1" firstAttribute="leading" secondItem="ix7-35-bzH" secondAttribute="leading" constant="16" id="EfV-iv-rkw"/>
+                            <constraint firstItem="grs-bU-2Q0" firstAttribute="top" secondItem="ix7-35-bzH" secondAttribute="top" constant="16" id="Jdh-eP-aV6"/>
+                            <constraint firstItem="ix7-35-bzH" firstAttribute="trailing" secondItem="o0e-LG-oT1" secondAttribute="trailing" constant="16" id="oN6-3m-D1X"/>
+                            <constraint firstItem="o0e-LG-oT1" firstAttribute="top" secondItem="grs-bU-2Q0" secondAttribute="bottom" constant="21" id="qaE-su-EuX"/>
+                            <constraint firstItem="grs-bU-2Q0" firstAttribute="centerX" secondItem="YZ2-0H-eVf" secondAttribute="centerX" id="rGT-9H-3uD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ix7-35-bzH"/>
+                    </view>
+                    <connections>
+                        <outlet property="informLabel" destination="o0e-LG-oT1" id="hRI-fw-ZbG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzf-cK-CxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2259.375" y="32.74647887323944"/>
         </scene>
         <!--Start Session View Controller-->
         <scene sceneID="Qwg-q9-AsC">
@@ -257,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4v-Px-Sd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107.5" y="32.74647887323944"/>
+            <point key="canvasLocation" x="2263" y="-734"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="ei4-v0-Qvx">
@@ -346,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3i-it-64L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="842"/>
+            <point key="canvasLocation" x="2263" y="897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6yA-oT-0LY">
@@ -373,6 +437,7 @@
     <resources>
         <image name="history" width="201" height="60"/>
         <image name="setting" width="201" height="60"/>
+        <image name="timer" width="197" height="56"/>
         <image name="tookpill" width="201" height="60"/>
     </resources>
 </document>
