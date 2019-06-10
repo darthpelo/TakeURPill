@@ -10,8 +10,6 @@
 		22028258F3C110E11C06B353 /* Pods_TakeUrPillUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E19745796E2A3CFE8FF36 /* Pods_TakeUrPillUITests.framework */; };
 		4C82EF6721725BEE00A248C3 /* TakeUrPillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6621725BEE00A248C3 /* TakeUrPillUITests.swift */; };
 		4C82EF702172618900A248C3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82EF6E217260C600A248C3 /* SnapshotHelper.swift */; };
-		4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
-		4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C82EF7121729EBB00A248C3 /* GoogleService-Info.plist */; };
 		5C4223EA792404E4B152BBE0 /* Pods_TakeUrPill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1278FE7399F98DA2192D6D88 /* Pods_TakeUrPill.framework */; };
 		93B39EF05E712B460769757B /* Pods_TakeUrPillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8155F2F9A013A52D6415D /* Pods_TakeUrPillTests.framework */; };
 		C69EDCFA1C6A463A0E043805 /* Pods_TakePillIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2999EE380F8F58F8CC10A1CB /* Pods_TakePillIntents.framework */; };
@@ -385,7 +383,6 @@
 				4C82EF6021725BEE00A248C3 /* Sources */,
 				4C82EF6121725BEE00A248C3 /* Frameworks */,
 				4C82EF6221725BEE00A248C3 /* Resources */,
-				71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,8 +403,7 @@
 				D99D5A7D20F8851400E3966F /* Frameworks */,
 				D99D5A7E20F8851400E3966F /* Resources */,
 				D9ACFCAB20FB7F3400E400B3 /* Embed App Extensions */,
-				D90AC0C42122D90500FEF873 /* ShellScript */,
-				8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */,
+				D90AC0C42122D90500FEF873 /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -427,7 +423,6 @@
 				D99D5A9020F8851800E3966F /* Sources */,
 				D99D5A9120F8851800E3966F /* Frameworks */,
 				D99D5A9220F8851800E3966F /* Resources */,
-				20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,10 +464,12 @@
 				TargetAttributes = {
 					4C82EF6321725BEE00A248C3 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = D99D5A7F20F8851400E3966F;
 					};
 					D99D5A7F20F8851400E3966F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -487,10 +484,12 @@
 					};
 					D99D5A9320F8851800E3966F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = D99D5A7F20F8851400E3966F;
 					};
 					D9E604AA20FD166F003A1DA1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -540,7 +539,6 @@
 				D94DA97F20F93BAF00162D76 /* Default-568h@2x.png in Resources */,
 				D99D5A8920F8851400E3966F /* Main.storyboard in Resources */,
 				D9D950AB215142B300820E73 /* PillsPickerView.xib in Resources */,
-				4C82EF7221729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,33 +553,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C82EF7321729EBB00A248C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20713EFE99D78DC00B4CCECD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		276A55E0F37DA720737D8315 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,46 +575,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71D9421C973689703E7CA9A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C1C454AD505B703AA6D72FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A27F1E2C79C2833C027797FE /* [CP] Check Pods Manifest.lock */ = {
@@ -694,13 +631,14 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D90AC0C42122D90500FEF873 /* ShellScript */ = {
+		D90AC0C42122D90500FEF873 /* swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = swiftlint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,7 +783,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakeUrPillUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TakeUrPill;
 			};
@@ -865,7 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill.TakeUrPillUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TakeUrPill;
 			};
@@ -1007,7 +945,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill-Dev";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1030,7 +968,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeURPill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "TakrURPill-Dist";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1051,7 +989,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPilTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPill.app/TakeUrPill";
 			};
@@ -1073,7 +1011,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.TakeUrPilTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeUrPill.app/TakeUrPill";
 			};
@@ -1097,7 +1035,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill TakePillIntents-Dev";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1120,7 +1058,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "TakeURPill TakePillIntents-Dist";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

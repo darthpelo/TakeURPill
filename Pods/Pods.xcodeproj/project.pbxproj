@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082D390DB87BC91B9986A35C6101CAB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1847FC461B885AFE12346CFEEC292258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		814DA52A3F53EA0A3226F3FCDBCE164C /* Pods-TakeUrPillUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D153A2B86FA9F31126E8CC0A8D98DDD /* Pods-TakeUrPillUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8927E44699A471F6A7FC893B245B3317 /* Pods-TakeUrPillTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A4E5FBA8F7ECFFC10F36994DC3EDD2 /* Pods-TakeUrPillTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0AC8C7C5CB35C1F41030E9DA4C810B /* Pods-TakeUrPill-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CEB8F389FA6157B6E48EA77B045CC /* Pods-TakeUrPill-dummy.m */; };
+		8D32E2DEEEAC412FC8DCCA249FCF039C /* Pods-TakeUrPill-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 538328AF3A3E23C928F64C5C5189C494 /* Pods-TakeUrPill-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C73BDAD9EF49FCA86BCC22FCFB9B15FF /* Pods-TakeUrPillUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEC850D50AEA83FFE9EED07C5CD291 /* Pods-TakeUrPillUITests-dummy.m */; };
+		D6E1B135FB8143D07F051E58331F38DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		D80F46C82052FAFB3B6BCF66DC1A3514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		D9BF0C4A0B37A8ABA2FE667372927190 /* Pods-TakeUrPillTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7497D27CA95538660E8EC82EC86E6962 /* Pods-TakeUrPillTests-dummy.m */; };
+		E09367A7FC7BBBC63E733EF2559F1673 /* Pods-TakePillIntents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152DE8868E65E94A261A832DFB148AA /* Pods-TakePillIntents-dummy.m */; };
+		F64FC49E8414D67D6741577105500169 /* Pods-TakePillIntents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A112190FD89F8641F7DB020BF80BE869 /* Pods-TakePillIntents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57CE1100DEB536221F578CCE5F6F1B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576B17285587D2B349A0ED0C895D2A66;
+			remoteInfo = "Pods-TakeUrPill";
+		};
+		67BE60B6C74108FB72E28EB1DE24D479 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576B17285587D2B349A0ED0C895D2A66;
+			remoteInfo = "Pods-TakeUrPill";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E5A726D9C8E7B2620A9B02D624C3155 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F7CEB8F389FA6157B6E48EA77B045CC /* Pods-TakeUrPill-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TakeUrPill-dummy.m"; sourceTree = "<group>"; };
+		13354A3879DEDD603696EC1DDB1716EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F20C13385316C082AC6145386E9C7D8 /* Pods-TakeUrPill.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TakeUrPill.modulemap"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		278192FA995FDCE40E8E142D2FCBC423 /* Pods-TakeUrPill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPill.release.xcconfig"; sourceTree = "<group>"; };
+		27D803FAC9D0BC24BA72B1DD2D1C1DBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EEBFB16F475A2FF70BC64E5519E8049 /* Pods-TakeUrPillUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPillUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F31FB5AC04E44667BF266A7BAE25AFF /* Pods-TakeUrPill-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TakeUrPill-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41919FD2FBD93FA63BC608F314E640FC /* Pods-TakeUrPillUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPillUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DE82ABA3E9EA88DAFF8CD01F5CE775E /* Pods-TakePillIntents-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TakePillIntents-acknowledgements.markdown"; sourceTree = "<group>"; };
+		538328AF3A3E23C928F64C5C5189C494 /* Pods-TakeUrPill-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TakeUrPill-umbrella.h"; sourceTree = "<group>"; };
+		5659F93C1ECB9CFEEC3A0E6A3BB03440 /* Pods-TakePillIntents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TakePillIntents.modulemap"; sourceTree = "<group>"; };
+		6152DE8868E65E94A261A832DFB148AA /* Pods-TakePillIntents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TakePillIntents-dummy.m"; sourceTree = "<group>"; };
+		63B91A5F923B4436F1FCF8C91B95C23F /* Pods-TakePillIntents-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TakePillIntents-acknowledgements.plist"; sourceTree = "<group>"; };
+		65A0FC5769E886E353FAD158BD88FA03 /* Pods-TakeUrPillUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TakeUrPillUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6765B0AECF6BA5AFE5BB3A6E15623A8E /* Pods_TakePillIntents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePillIntents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701A81ECF34EAFCC3207FAD47BCBF036 /* Pods-TakeUrPillUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPillUITests-resources.sh"; sourceTree = "<group>"; };
+		7497D27CA95538660E8EC82EC86E6962 /* Pods-TakeUrPillTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TakeUrPillTests-dummy.m"; sourceTree = "<group>"; };
+		7F8291C555BA510278F87779048FE416 /* Pods-TakeUrPillTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPillTests-frameworks.sh"; sourceTree = "<group>"; };
+		89040CFFCB6AE40FB1B1DE1E1CC5EACC /* Pods-TakeUrPillTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TakeUrPillTests.modulemap"; sourceTree = "<group>"; };
+		8A14C8F9371EAC8FCAFFBAD27CC0A099 /* Pods_TakeUrPill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6C02E7FA624E945CCF5E2605F2BC54 /* Pods-TakeUrPillTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TakeUrPillTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		96B3023F77226EA0CFA73CE5F45757D6 /* Pods-TakeUrPillTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TakeUrPillTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9AEEC850D50AEA83FFE9EED07C5CD291 /* Pods-TakeUrPillUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TakeUrPillUITests-dummy.m"; sourceTree = "<group>"; };
+		9D153A2B86FA9F31126E8CC0A8D98DDD /* Pods-TakeUrPillUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TakeUrPillUITests-umbrella.h"; sourceTree = "<group>"; };
+		A099F2F10A6526C41B18455268CDB52E /* Pods-TakeUrPillUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPillUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A112190FD89F8641F7DB020BF80BE869 /* Pods-TakePillIntents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TakePillIntents-umbrella.h"; sourceTree = "<group>"; };
+		A2A4E5FBA8F7ECFFC10F36994DC3EDD2 /* Pods-TakeUrPillTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TakeUrPillTests-umbrella.h"; sourceTree = "<group>"; };
+		B537D8933918C398704231ADEE816B56 /* Pods-TakePillIntents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakePillIntents.debug.xcconfig"; sourceTree = "<group>"; };
+		BB8EFA27D60E65B6409290263EDB2BAE /* Pods_TakeUrPillTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPillTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE59513954843E53E6FEA4978F577A29 /* Pods_TakeUrPillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeUrPillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C849D4B8593A3843AE74F53711FD3FCD /* Pods-TakeUrPill-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPill-frameworks.sh"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4F4F2E62A8640050AAF2BD44159667C /* Pods-TakeUrPill-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TakeUrPill-acknowledgements.plist"; sourceTree = "<group>"; };
+		D957D677CA51CA975155013E5954A94D /* Pods-TakeUrPill-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPill-resources.sh"; sourceTree = "<group>"; };
+		DB80B1BCAC9809B04811BC7C5A7E5923 /* Pods-TakeUrPill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPill.debug.xcconfig"; sourceTree = "<group>"; };
+		E93FC43A6579866C77D8ED67D40A38D6 /* Pods-TakeUrPillTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPillTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED91C5282A2E132FFB86EDD924DAB7DD /* Pods-TakePillIntents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakePillIntents.release.xcconfig"; sourceTree = "<group>"; };
+		EFB6D1F23FFC7F7695FF0D9101B69952 /* Pods-TakePillIntents-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakePillIntents-resources.sh"; sourceTree = "<group>"; };
+		F01B3E52C7CCD2A1132BA2130ED5E369 /* Pods-TakeUrPillUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TakeUrPillUITests.modulemap"; sourceTree = "<group>"; };
+		F597106AF0BD533F5C668585D44227C8 /* Pods-TakeUrPillTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TakeUrPillTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F89A9A07CC6FA12F16896AE3D6329A05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2033347166CCF3BE64CF8A9F8449A0 /* Pods-TakeUrPillUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TakeUrPillUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD984AE9731BD9A587FC039B8E85F02F /* Pods-TakeUrPillTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TakeUrPillTests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53ED31E925C1A26622E9A73E03833C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E1B135FB8143D07F051E58331F38DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE3DB42B7CF0E249BFFFF3F6205E648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082D390DB87BC91B9986A35C6101CAB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AB071750DC923806426D2B43ED492F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1847FC461B885AFE12346CFEEC292258 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1EE1668FB8AF3F3236A913C459F459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80F46C82052FAFB3B6BCF66DC1A3514 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C642D419C7FE5CA1B0655917A18C8FE /* Pods-TakeUrPillTests */ = {
+			isa = PBXGroup;
+			children = (
+				27D803FAC9D0BC24BA72B1DD2D1C1DBA /* Info.plist */,
+				89040CFFCB6AE40FB1B1DE1E1CC5EACC /* Pods-TakeUrPillTests.modulemap */,
+				8C6C02E7FA624E945CCF5E2605F2BC54 /* Pods-TakeUrPillTests-acknowledgements.markdown */,
+				96B3023F77226EA0CFA73CE5F45757D6 /* Pods-TakeUrPillTests-acknowledgements.plist */,
+				7497D27CA95538660E8EC82EC86E6962 /* Pods-TakeUrPillTests-dummy.m */,
+				7F8291C555BA510278F87779048FE416 /* Pods-TakeUrPillTests-frameworks.sh */,
+				FD984AE9731BD9A587FC039B8E85F02F /* Pods-TakeUrPillTests-resources.sh */,
+				A2A4E5FBA8F7ECFFC10F36994DC3EDD2 /* Pods-TakeUrPillTests-umbrella.h */,
+				F597106AF0BD533F5C668585D44227C8 /* Pods-TakeUrPillTests.debug.xcconfig */,
+				E93FC43A6579866C77D8ED67D40A38D6 /* Pods-TakeUrPillTests.release.xcconfig */,
+			);
+			name = "Pods-TakeUrPillTests";
+			path = "Target Support Files/Pods-TakeUrPillTests";
+			sourceTree = "<group>";
+		};
+		7AD2364F62F63A858C029AD2D1AF16CB /* Pods-TakeUrPill */ = {
+			isa = PBXGroup;
+			children = (
+				F89A9A07CC6FA12F16896AE3D6329A05 /* Info.plist */,
+				1F20C13385316C082AC6145386E9C7D8 /* Pods-TakeUrPill.modulemap */,
+				2F31FB5AC04E44667BF266A7BAE25AFF /* Pods-TakeUrPill-acknowledgements.markdown */,
+				D4F4F2E62A8640050AAF2BD44159667C /* Pods-TakeUrPill-acknowledgements.plist */,
+				0F7CEB8F389FA6157B6E48EA77B045CC /* Pods-TakeUrPill-dummy.m */,
+				C849D4B8593A3843AE74F53711FD3FCD /* Pods-TakeUrPill-frameworks.sh */,
+				D957D677CA51CA975155013E5954A94D /* Pods-TakeUrPill-resources.sh */,
+				538328AF3A3E23C928F64C5C5189C494 /* Pods-TakeUrPill-umbrella.h */,
+				DB80B1BCAC9809B04811BC7C5A7E5923 /* Pods-TakeUrPill.debug.xcconfig */,
+				278192FA995FDCE40E8E142D2FCBC423 /* Pods-TakeUrPill.release.xcconfig */,
+			);
+			name = "Pods-TakeUrPill";
+			path = "Target Support Files/Pods-TakeUrPill";
+			sourceTree = "<group>";
+		};
+		82EAB6860F40F7639520E16417BE2008 /* Pods-TakePillIntents */ = {
+			isa = PBXGroup;
+			children = (
+				13354A3879DEDD603696EC1DDB1716EC /* Info.plist */,
+				5659F93C1ECB9CFEEC3A0E6A3BB03440 /* Pods-TakePillIntents.modulemap */,
+				4DE82ABA3E9EA88DAFF8CD01F5CE775E /* Pods-TakePillIntents-acknowledgements.markdown */,
+				63B91A5F923B4436F1FCF8C91B95C23F /* Pods-TakePillIntents-acknowledgements.plist */,
+				6152DE8868E65E94A261A832DFB148AA /* Pods-TakePillIntents-dummy.m */,
+				EFB6D1F23FFC7F7695FF0D9101B69952 /* Pods-TakePillIntents-resources.sh */,
+				A112190FD89F8641F7DB020BF80BE869 /* Pods-TakePillIntents-umbrella.h */,
+				B537D8933918C398704231ADEE816B56 /* Pods-TakePillIntents.debug.xcconfig */,
+				ED91C5282A2E132FFB86EDD924DAB7DD /* Pods-TakePillIntents.release.xcconfig */,
+			);
+			name = "Pods-TakePillIntents";
+			path = "Target Support Files/Pods-TakePillIntents";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AEFE629C281C73217F40A9009AC4A70D /* Pods-TakeUrPillUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A726D9C8E7B2620A9B02D624C3155 /* Info.plist */,
+				F01B3E52C7CCD2A1132BA2130ED5E369 /* Pods-TakeUrPillUITests.modulemap */,
+				65A0FC5769E886E353FAD158BD88FA03 /* Pods-TakeUrPillUITests-acknowledgements.markdown */,
+				FD2033347166CCF3BE64CF8A9F8449A0 /* Pods-TakeUrPillUITests-acknowledgements.plist */,
+				9AEEC850D50AEA83FFE9EED07C5CD291 /* Pods-TakeUrPillUITests-dummy.m */,
+				A099F2F10A6526C41B18455268CDB52E /* Pods-TakeUrPillUITests-frameworks.sh */,
+				701A81ECF34EAFCC3207FAD47BCBF036 /* Pods-TakeUrPillUITests-resources.sh */,
+				9D153A2B86FA9F31126E8CC0A8D98DDD /* Pods-TakeUrPillUITests-umbrella.h */,
+				41919FD2FBD93FA63BC608F314E640FC /* Pods-TakeUrPillUITests.debug.xcconfig */,
+				2EEBFB16F475A2FF70BC64E5519E8049 /* Pods-TakeUrPillUITests.release.xcconfig */,
+			);
+			name = "Pods-TakeUrPillUITests";
+			path = "Target Support Files/Pods-TakeUrPillUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FFDC59D64102FC3A099DA9EA05456E48 /* Products */,
+				E7527FD7907A85607564F8F99A25E2D8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7527FD7907A85607564F8F99A25E2D8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82EAB6860F40F7639520E16417BE2008 /* Pods-TakePillIntents */,
+				7AD2364F62F63A858C029AD2D1AF16CB /* Pods-TakeUrPill */,
+				2C642D419C7FE5CA1B0655917A18C8FE /* Pods-TakeUrPillTests */,
+				AEFE629C281C73217F40A9009AC4A70D /* Pods-TakeUrPillUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FFDC59D64102FC3A099DA9EA05456E48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6765B0AECF6BA5AFE5BB3A6E15623A8E /* Pods_TakePillIntents.framework */,
+				8A14C8F9371EAC8FCAFFBAD27CC0A099 /* Pods_TakeUrPill.framework */,
+				BB8EFA27D60E65B6409290263EDB2BAE /* Pods_TakeUrPillTests.framework */,
+				BE59513954843E53E6FEA4978F577A29 /* Pods_TakeUrPillUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17C876385881494624573FCCB814E156 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814DA52A3F53EA0A3226F3FCDBCE164C /* Pods-TakeUrPillUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEA847099A7FAC306FCD962BBFA0DA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D32E2DEEEAC412FC8DCCA249FCF039C /* Pods-TakeUrPill-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A111FB9705E76BC16B2B7B53D95657AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64FC49E8414D67D6741577105500169 /* Pods-TakePillIntents-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81632C9665C12FBB8D234049D253C74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8927E44699A471F6A7FC893B245B3317 /* Pods-TakeUrPillTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		576B17285587D2B349A0ED0C895D2A66 /* Pods-TakeUrPill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9508081223878294B78B54450CD08B /* Build configuration list for PBXNativeTarget "Pods-TakeUrPill" */;
+			buildPhases = (
+				3AEA847099A7FAC306FCD962BBFA0DA1 /* Headers */,
+				1E86D63D4534215F7C8DBCA424CCCFFE /* Sources */,
+				FF1EE1668FB8AF3F3236A913C459F459 /* Frameworks */,
+				157B88A6F3B22594E4E24F5E48E11A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TakeUrPill";
+			productName = "Pods-TakeUrPill";
+			productReference = 8A14C8F9371EAC8FCAFFBAD27CC0A099 /* Pods_TakeUrPill.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71478A93DA05AC03DE20D7E57CBD11AA /* Pods-TakeUrPillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD8B9FC7369C07ABEC41DD77173EDE3 /* Build configuration list for PBXNativeTarget "Pods-TakeUrPillTests" */;
+			buildPhases = (
+				C81632C9665C12FBB8D234049D253C74 /* Headers */,
+				ADAE8B35BC2693069C04A202347519C9 /* Sources */,
+				53ED31E925C1A26622E9A73E03833C7A /* Frameworks */,
+				72FDDB96E92C8AE25637C25E6F48FC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA8DF45AD80ED414EE6F8D4810D27855 /* PBXTargetDependency */,
+			);
+			name = "Pods-TakeUrPillTests";
+			productName = "Pods-TakeUrPillTests";
+			productReference = BB8EFA27D60E65B6409290263EDB2BAE /* Pods_TakeUrPillTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C39A236676369033107E4C7C25FEF94F /* Pods-TakeUrPillUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAB98899BC71B41965B9CD886720F2F /* Build configuration list for PBXNativeTarget "Pods-TakeUrPillUITests" */;
+			buildPhases = (
+				17C876385881494624573FCCB814E156 /* Headers */,
+				83E7CC3C3E0B3181B9D9DB19A7ABCAA9 /* Sources */,
+				BEE3DB42B7CF0E249BFFFF3F6205E648 /* Frameworks */,
+				E882C708B1072BCCFB2D84283DAE1977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3C12452EFC390F8A614525A33AF346 /* PBXTargetDependency */,
+			);
+			name = "Pods-TakeUrPillUITests";
+			productName = "Pods-TakeUrPillUITests";
+			productReference = BE59513954843E53E6FEA4978F577A29 /* Pods_TakeUrPillUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF3137C6F4498F006AF19C2B4E76074C /* Pods-TakePillIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EEC39B494E7116DA23C63F28A1DAC59 /* Build configuration list for PBXNativeTarget "Pods-TakePillIntents" */;
+			buildPhases = (
+				A111FB9705E76BC16B2B7B53D95657AB /* Headers */,
+				BD02377F099B5FF643D97D662B219762 /* Sources */,
+				D1AB071750DC923806426D2B43ED492F /* Frameworks */,
+				5DFED1CC3891763C0A81EE9BD9452965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TakePillIntents";
+			productName = "Pods-TakePillIntents";
+			productReference = 6765B0AECF6BA5AFE5BB3A6E15623A8E /* Pods_TakePillIntents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FFDC59D64102FC3A099DA9EA05456E48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF3137C6F4498F006AF19C2B4E76074C /* Pods-TakePillIntents */,
+				576B17285587D2B349A0ED0C895D2A66 /* Pods-TakeUrPill */,
+				71478A93DA05AC03DE20D7E57CBD11AA /* Pods-TakeUrPillTests */,
+				C39A236676369033107E4C7C25FEF94F /* Pods-TakeUrPillUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157B88A6F3B22594E4E24F5E48E11A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DFED1CC3891763C0A81EE9BD9452965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FDDB96E92C8AE25637C25E6F48FC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E882C708B1072BCCFB2D84283DAE1977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E86D63D4534215F7C8DBCA424CCCFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0AC8C7C5CB35C1F41030E9DA4C810B /* Pods-TakeUrPill-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E7CC3C3E0B3181B9D9DB19A7ABCAA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73BDAD9EF49FCA86BCC22FCFB9B15FF /* Pods-TakeUrPillUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAE8B35BC2693069C04A202347519C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BF0C4A0B37A8ABA2FE667372927190 /* Pods-TakeUrPillTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD02377F099B5FF643D97D662B219762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09367A7FC7BBBC63E733EF2559F1673 /* Pods-TakePillIntents-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA8DF45AD80ED414EE6F8D4810D27855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TakeUrPill";
+			target = 576B17285587D2B349A0ED0C895D2A66 /* Pods-TakeUrPill */;
+			targetProxy = 57CE1100DEB536221F578CCE5F6F1B9F /* PBXContainerItemProxy */;
+		};
+		DD3C12452EFC390F8A614525A33AF346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TakeUrPill";
+			target = 576B17285587D2B349A0ED0C895D2A66 /* Pods-TakeUrPill */;
+			targetProxy = 67BE60B6C74108FB72E28EB1DE24D479 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B9277CAAB493322DC28FCDC9C149D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B537D8933918C398704231ADEE816B56 /* Pods-TakePillIntents.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakePillIntents/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakePillIntents/Pods-TakePillIntents.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2FB1B95DC30590F463F65CB4DE2D6239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93FC43A6579866C77D8ED67D40A38D6 /* Pods-TakeUrPillTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPillTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		400190CD1FA020F0162ED46A330F9817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F597106AF0BD533F5C668585D44227C8 /* Pods-TakeUrPillTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPillTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPillTests/Pods-TakeUrPillTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46A32507F6317B8673E54D537A93B40A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EEBFB16F475A2FF70BC64E5519E8049 /* Pods-TakeUrPillUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPillUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D7108366026D570F617B109D6F4E7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5FC1C26C96D6037A35DFA8F702632040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278192FA995FDCE40E8E142D2FCBC423 /* Pods-TakeUrPill.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPill/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F993FDFFF0977BBEFEF11E3D23E50A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		76300307B15731B62DA3CE31A5270550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED91C5282A2E132FFB86EDD924DAB7DD /* Pods-TakePillIntents.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakePillIntents/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakePillIntents/Pods-TakePillIntents.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8979E5DA6E52089A4C3438D4681D3437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41919FD2FBD93FA63BC608F314E640FC /* Pods-TakeUrPillUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPillUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPillUITests/Pods-TakeUrPillUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9583AFA55BFAF4B88D6F6522340BC1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB80B1BCAC9809B04811BC7C5A7E5923 /* Pods-TakeUrPill.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TakeUrPill/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TakeUrPill/Pods-TakeUrPill.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FAB98899BC71B41965B9CD886720F2F /* Build configuration list for PBXNativeTarget "Pods-TakeUrPillUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8979E5DA6E52089A4C3438D4681D3437 /* Debug */,
+				46A32507F6317B8673E54D537A93B40A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD8B9FC7369C07ABEC41DD77173EDE3 /* Build configuration list for PBXNativeTarget "Pods-TakeUrPillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400190CD1FA020F0162ED46A330F9817 /* Debug */,
+				2FB1B95DC30590F463F65CB4DE2D6239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7108366026D570F617B109D6F4E7C2 /* Debug */,
+				6F993FDFFF0977BBEFEF11E3D23E50A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9508081223878294B78B54450CD08B /* Build configuration list for PBXNativeTarget "Pods-TakeUrPill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9583AFA55BFAF4B88D6F6522340BC1B5 /* Debug */,
+				5FC1C26C96D6037A35DFA8F702632040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EEC39B494E7116DA23C63F28A1DAC59 /* Build configuration list for PBXNativeTarget "Pods-TakePillIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9277CAAB493322DC28FCDC9C149D35 /* Debug */,
+				76300307B15731B62DA3CE31A5270550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
