@@ -5,36 +5,48 @@
 	<key>INEnums</key>
 	<array/>
 	<key>INIntentDefinitionModelVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
+	<key>INIntentDefinitionNamespace</key>
+	<string>8imsYu</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>17G65</string>
+	<string>19A487l</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>10L221o</string>
+	<string>11M337n</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>10.0</string>
+	<string>11.0</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
 			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
 			<key>INIntentDescription</key>
 			<string>Track the pill took by the user</string>
 			<key>INIntentDescriptionID</key>
 			<string>BDRh6Q</string>
 			<key>INIntentLastParameterTag</key>
 			<integer>3</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key>ammount,title</key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>I took ${ammount} ${title}pill</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>A6EObS</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
 			<key>INIntentName</key>
 			<string>TakePill</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
 				<key>ammount,title</key>
 				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>2ls8xE</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
@@ -42,28 +54,138 @@
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>fAVimC</string>
 				</dict>
+				<key>title</key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>I took ${title}pill</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>Nd5oQt</string>
+				</dict>
 			</dict>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterCustomDisambiguation</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Ammount</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>WWQiCW</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<integer>1</integer>
+						<key>INIntentParameterMetadataMaximumValue</key>
+						<integer>5</integer>
+						<key>INIntentParameterMetadataMinimumValue</key>
+						<integer>1</integer>
+						<key>INIntentParameterMetadataType</key>
+						<string>Field</string>
+					</dict>
 					<key>INIntentParameterName</key>
 					<string>ammount</string>
-					<key>INIntentParameterSupportsMultipleValues</key>
-					<false/>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>How many pills you took?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>90oLFO</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Just to confirm, you said ‘${ammount}’?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>5WQSfj</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Confirmation</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
 					<key>INIntentParameterTag</key>
 					<integer>2</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
+					<key>INIntentParameterUnsupportedReasons</key>
+					<array>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>negativeNumbersNotSupported</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can't be negative.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>L2OJe1</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>greaterThanMaximumValue</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can't be higher than ${maximumValue}.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>OkkbUm</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>lessThanMinimumValue</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can't be lower than ${minimumValue}.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>gz6Kbi</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
+					<key>INIntentParameterDisplayName</key>
+					<string>Pill</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>GQULri</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>2</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>None</string>
+						<key>INIntentParameterMetadataDisableSmartDashes</key>
+						<true/>
+						<key>INIntentParameterMetadataDisableSmartQuotes</key>
+						<true/>
+					</dict>
 					<key>INIntentParameterName</key>
 					<string>title</string>
-					<key>INIntentParameterSupportsMultipleValues</key>
-					<false/>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Which pill you took?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>lct7Kv</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
 					<key>INIntentParameterTag</key>
 					<integer>3</integer>
 					<key>INIntentParameterType</key>
@@ -76,16 +198,6 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string></string>
-						<key>INIntentResponseCodeFormatStringID</key>
-						<string>NEaJI6</string>
-						<key>INIntentResponseCodeName</key>
-						<string>failure</string>
-						<key>INIntentResponseCodeSuccess</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>INIntentResponseCodeFormatString</key>
 						<string>The ${pillName} pill was recorded in your history</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>hChaWZ</string>
@@ -93,6 +205,10 @@
 						<string>success</string>
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
@@ -104,8 +220,6 @@
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
 						<string>pillName</string>
-						<key>INIntentResponseParameterSupportsMultipleValues</key>
-						<false/>
 						<key>INIntentResponseParameterTag</key>
 						<integer>1</integer>
 						<key>INIntentResponseParameterType</key>
@@ -113,8 +227,6 @@
 					</dict>
 				</array>
 			</dict>
-			<key>INIntentRestrictions</key>
-			<integer>0</integer>
 			<key>INIntentTitle</key>
 			<string>I Took My Pill</string>
 			<key>INIntentTitleID</key>
@@ -127,5 +239,7 @@
 			<string>Do</string>
 		</dict>
 	</array>
+	<key>INTypes</key>
+	<array/>
 </dict>
 </plist>
