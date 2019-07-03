@@ -11,7 +11,7 @@ import Intents
 class IntentHandler: INExtension, TakePillIntentHandling {
     @available(iOSApplicationExtension 13.0, *)
     func resolveAmmount(for intent: TakePillIntent, with completion: @escaping (TakePillAmmountResolutionResult) -> Void) {
-        if let ammount = intent.ammount?.intValue {
+        if let ammount = intent.ammount?.intValue, ammount > 0 {
             completion(.success(with: ammount))
         } else {
             completion(.needsValue())
@@ -25,7 +25,6 @@ class IntentHandler: INExtension, TakePillIntentHandling {
             completion(.needsValue())
         }
     }
-    
     
     override func handler(for intent: INIntent) -> Any {
         // This is the default implementation.  If you want different objects to handle different intents,

@@ -26,7 +26,7 @@ struct HomePresenter: HomeManageble {
 
     func pillTook(_ pill: PillType) {
         let pill = Pill(timestamp: Date().timeIntervalSince1970,
-                        ammount: pill.ammount,
+                        ammount: pill.ammount ?? 0,
                         name: pill.name)
         if storage.store(pill) == false {
             logger("Failed to store pill")

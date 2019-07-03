@@ -42,19 +42,19 @@ final class StartSessionViewController: BaseViewController {
             return
         }
 
-        guard let ammount = ammount, ammount.isNumber == true else {
-            let alertView = UIAlertController(title: nil,
-                                              message: NSLocalizedString("startSession.alert.ammount", comment: ""),
-                                              preferredStyle: .alert)
-            alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            present(alertView, animated: true, completion: nil)
-            return
-        }
+//        guard let ammount = ammount, ammount.isNumber == true else {
+//            let alertView = UIAlertController(title: nil,
+//                                              message: NSLocalizedString("startSession.alert.ammount", comment: ""),
+//                                              preferredStyle: .alert)
+//            alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//            present(alertView, animated: true, completion: nil)
+//            return
+//        }
 
         UserDefaults.standard.pillName = name
-        UserDefaults.standard.pillAmmount = Int(ammount)
+        UserDefaults.standard.pillAmmount = Int(ammount ?? "0")
 
-        Storage().store(PillType(ammount: Int(ammount)!, name: name))
+        _ = Storage().store(PillType(ammount: Int(ammount ?? "0"), name: name))
 
         self.navigationController?.popToRootViewController(animated: true)
     }
