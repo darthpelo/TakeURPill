@@ -45,7 +45,7 @@ extension Pill {
 }
 
 struct PillType: Codable {
-    var ammount: Int
+    var ammount: Int?
     var name: String
 }
 
