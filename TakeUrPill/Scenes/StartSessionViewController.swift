@@ -42,15 +42,6 @@ final class StartSessionViewController: BaseViewController {
             return
         }
 
-//        guard let ammount = ammount, ammount.isNumber == true else {
-//            let alertView = UIAlertController(title: nil,
-//                                              message: NSLocalizedString("startSession.alert.ammount", comment: ""),
-//                                              preferredStyle: .alert)
-//            alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//            present(alertView, animated: true, completion: nil)
-//            return
-//        }
-
         UserDefaults.standard.pillName = name
         UserDefaults.standard.pillAmmount = Int(ammount ?? "0")
 
