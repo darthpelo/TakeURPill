@@ -2,7 +2,7 @@
 
 "V5DIF6" = "I Took My Pill";
 
-"fAVimC" = "I took ${ammount} ${title} pill";
+"fAVimC" = "I took ${amount} ${title} pill";
 
-"hChaWZ" = "The ${pillName} pill was recorderd in your history";
+"hChaWZ" = "The ${pillName} pill was recorded in your history";
 

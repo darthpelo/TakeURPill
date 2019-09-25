@@ -48,7 +48,7 @@ class TakeUrPillUITests: XCTestCase {
         
         aKey.tap()
         
-        app.textFields["insert ammount"].tap()
+        app.textFields["insert amount"].tap()
         
         let key = app/*@START_MENU_TOKEN@*/.keys["1"]/*[[".keyboards.keys[\"1\"]",".keys[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         key.tap()

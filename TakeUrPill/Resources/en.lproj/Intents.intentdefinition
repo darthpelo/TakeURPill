@@ -9,9 +9,9 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>8imsYu</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>18F203</string>
+	<string>18G95</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11M362v</string>
+	<string>11A420a</string>
 	<key>INIntentDefinitionToolsVersion</key>
 	<string>11.0</string>
 	<key>INIntents</key>
@@ -29,12 +29,12 @@
 			<integer>3</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
-				<key>ammount,title</key>
+				<key>amount,title</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>I took ${ammount} ${title}pill</string>
+					<string>I took ${amount} ${title}pill</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>A6EObS</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -45,12 +45,12 @@
 			<string>TakePill</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>ammount,title</key>
+				<key>amount,title</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>I took ${ammount} ${title} pill</string>
+					<string>I took ${amount} ${title} pill</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>fAVimC</string>
 				</dict>
@@ -72,7 +72,7 @@
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Ammount</string>
+					<string>Amount</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>WWQiCW</string>
 					<key>INIntentParameterDisplayPriority</key>
@@ -89,7 +89,7 @@
 						<string>Field</string>
 					</dict>
 					<key>INIntentParameterName</key>
-					<string>ammount</string>
+					<string>amount</string>
 					<key>INIntentParameterPromptDialogs</key>
 					<array>
 						<dict>
@@ -106,7 +106,7 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Just to confirm, you said ‘${ammount}’?</string>
+							<string>Just to confirm, you said ‘${amount}’?</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
 							<string>5WQSfj</string>
 							<key>INIntentParameterPromptDialogType</key>

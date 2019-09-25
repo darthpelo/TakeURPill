@@ -85,7 +85,7 @@ extension TableViewDataSource where Model == PillType {
             reuseIdentifier: reuseIdentifier
         ) { pill, cell in
             cell.textLabel?.text = pill.name
-            cell.detailTextLabel?.text = "\(pill.ammount)"
+            cell.detailTextLabel?.text = "\(pill.amount)"
         }
     }
 }

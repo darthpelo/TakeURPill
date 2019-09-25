@@ -122,7 +122,7 @@ extension PillsPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let pillType = pills[row]
-        return "\(pillType.name) - \(pillType.ammount)"
+        return "\(pillType.name) - \(pillType.amount)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

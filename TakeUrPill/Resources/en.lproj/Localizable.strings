@@ -6,20 +6,20 @@
   Copyright © 2018 Alessio Roberto. All rights reserved.
 */
 
-"home.button.takepill.title" = "Pill Took";
+"home.button.takepill.title" = "Pill Taken";
 "home.button.startsession.title" = "Start Session";
 "home.button.history.title" = "History";
 "home.title" = "Take Your Pill";
-"home.siri.intent.suggestion" = "Next time tell to Siri when you take a %@ pill";
+"home.siri.intent.suggestion" = "Next time tell Siri when you take a %@ pill";
 
 "startSession.button.close.title" = "Close";
 "startSession.button.start.title" = "Start";
 "startSession.button.cancel.title" = "Stop";
 "startSession.label.name.title" = "Pill's Name";
-"startSession.label.ammount.title" = "Number of pills";
+"startSession.label.amount.title" = "Number of pills";
 "startSession.button.save.title" = "Save";
 "startSession.alert.name" = "Name must be fill";
-"startSession.alert.ammount" = "Number of pills must be fill";
+"startSession.alert.amount" = "Number of pills must be fill";
 
 "history.button.close.title" = "Close";
 "history.button.erase.title" = "Erase";

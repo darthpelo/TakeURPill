@@ -34,7 +34,7 @@ extension UserDefaults {
         set { set(newValue, forKey: #function) }
     }
 
-    var pillAmmount: Int? {
+    var pillAmount: Int? {
         get { return integer(forKey: #function) }
         set { set(newValue, forKey: #function) }
     }

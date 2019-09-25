@@ -22,13 +22,13 @@ class PillModelTests: XCTestCase {
     func testPillInit() {
         let stubDate = Date().timeIntervalSince1970
         let sut = Pill(timestamp: stubDate,
-                        ammount: 0,
+                        amount: 0,
                         name: "test")
 
         XCTAssertNotNil(sut)
 
         XCTAssertEqual(sut.name, "test")
-        XCTAssertEqual(sut.ammount, 0)
+        XCTAssertEqual(sut.amount, 0)
         XCTAssertEqual(sut.timestamp, stubDate)
     }
 }

@@ -26,7 +26,7 @@ struct HomePresenter: HomeManageble {
 
     func pillTook(_ pill: PillType) {
         let pill = Pill(timestamp: Date().timeIntervalSince1970,
-                        ammount: pill.ammount ?? 0,
+                        amount: pill.amount ?? 0,
                         name: pill.name)
         if storage.store(pill) == false {
             logger("Failed to store pill")
@@ -57,7 +57,7 @@ struct HomePresenter: HomeManageble {
             let lastPill = Convert.convertToPill(data) else { return nil }
 
         let intent = TakePillIntent()
-        intent.ammount = lastPill.ammount as NSNumber
+        intent.amount = lastPill.amount as NSNumber
         intent.title = lastPill.name
         intent.suggestedInvocationPhrase = "\(lastPill.name) time"
 

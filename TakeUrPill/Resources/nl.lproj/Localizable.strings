@@ -16,7 +16,7 @@
 "startSession.button.start.title" = "Start";
 "startSession.button.cancel.title" = "Beëindig";
 "startSession.label.name.title" = "De naam van pil";
-"startSession.label.ammount.title" = "Aantal pillen die elke keer moeten worden ingenomen";
+"startSession.label.amount.title" = "Aantal pillen die elke keer moeten worden ingenomen";
 "startSession.button.save.title" = "Onthoud";
 
 "history.button.close.title" = "Sluiten";

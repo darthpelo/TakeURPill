@@ -159,12 +159,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.label.ammount.title"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localisedKey" value="startSession.label.amount.title"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-eo-yOg">
                                         <rect key="frame" x="16" y="125" width="288" height="30"/>
-                                        <accessibility key="accessibilityConfiguration" label="insert ammount"/>
+                                        <accessibility key="accessibilityConfiguration" label="insert amount"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
@@ -250,7 +250,7 @@
                         <viewLayoutGuide key="safeArea" id="VNy-oL-2yc"/>
                     </view>
                     <connections>
-                        <outlet property="ammountTextField" destination="QxD-eo-yOg" id="hXY-aj-gu7"/>
+                        <outlet property="amountTextField" destination="QxD-eo-yOg" id="hXY-aj-gu7"/>
                         <outlet property="pillNameTextField" destination="EgH-9h-rNx" id="LCD-sp-Cj6"/>
                         <outlet property="tableView" destination="Zhq-qs-MN9" id="szS-M1-i6Z"/>
                     </connections>

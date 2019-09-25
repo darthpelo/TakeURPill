@@ -10,9 +10,9 @@ import Intents
 
 class IntentHandler: INExtension, TakePillIntentHandling {
     @available(iOSApplicationExtension 13.0, *)
-    func resolveAmmount(for intent: TakePillIntent, with completion: @escaping (TakePillAmmountResolutionResult) -> Void) {
-        if let ammount = intent.ammount?.intValue, ammount > 0 {
-            completion(.success(with: ammount))
+    func resolveAmount(for intent: TakePillIntent, with completion: @escaping (TakePillAmountResolutionResult) -> Void) {
+        if let amount = intent.amount?.intValue, amount > 0 {
+            completion(.success(with: amount))
         } else {
             completion(.needsValue())
         }

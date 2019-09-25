@@ -2,7 +2,7 @@
 
 "V5DIF6" = "Ho preso la mia pillola";
 
-"fAVimC" = "Ho preso ${ammount} pillole di ${title}";
+"fAVimC" = "Ho preso ${amount} pillole di ${title}";
 
 "hChaWZ" = "${pillName} è stata aggiunta nel tuo registro";
 

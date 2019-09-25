@@ -11,12 +11,12 @@ import UIKit
 final class StartSessionViewController: BaseViewController {
 
     @IBOutlet weak var pillNameTextField: UITextField!
-    @IBOutlet weak var ammountTextField: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     private var dataSource: TableViewDataSource<PillType>?
 
     private var name: String?
-    private var ammount: String?
+    private var amount: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +43,9 @@ final class StartSessionViewController: BaseViewController {
         }
 
         UserDefaults.standard.pillName = name
-        UserDefaults.standard.pillAmmount = Int(ammount ?? "0")
+        UserDefaults.standard.pillAmount = Int(amount ?? "0")
 
-        _ = Storage().store(PillType(ammount: Int(ammount ?? "0"), name: name))
+        _ = Storage().store(PillType(amount: Int(amount ?? "0"), name: name))
 
         self.navigationController?.popToRootViewController(animated: true)
     }
@@ -65,8 +65,8 @@ extension StartSessionViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == pillNameTextField, let text = textField.text {
             name = text + string
-        } else if textField == ammountTextField, let text = textField.text {
-            ammount = text + string
+        } else if textField == amountTextField, let text = textField.text {
+            amount = text + string
         }
         return true
     }

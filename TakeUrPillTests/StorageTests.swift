@@ -24,7 +24,7 @@ class StorageTests: XCTestCase {
     func testPillEncode() {
         let stubDate = Date().timeIntervalSince1970
         let sut = Pill(timestamp: stubDate,
-                       ammount: 0,
+                       amount: 0,
                        name: "test")
 
         let encoder = JSONEncoder()
@@ -40,11 +40,11 @@ class StorageTests: XCTestCase {
         let stubDate = Date().timeIntervalSince1970
 
         let pillOne = Pill(timestamp: stubDate,
-                           ammount: 1,
+                           amount: 1,
                            name: "one")
 
         let pillTwo = Pill(timestamp: stubDate,
-                           ammount: 1,
+                           amount: 1,
                            name: "two")
 
         let list = [pillOne, pillTwo]
@@ -61,17 +61,17 @@ class StorageTests: XCTestCase {
 
     private func getPill() -> Pill {
         return Pill(timestamp: stubDate,
-                       ammount: 0,
+                       amount: 0,
                        name: "test")
     }
 
     private func getPills() -> [Pill] {
         let pillOne = Pill(timestamp: stubDate,
-                           ammount: 1,
+                           amount: 1,
                            name: "one")
 
         let pillTwo = Pill(timestamp: stubDate,
-                           ammount: 1,
+                           amount: 1,
                            name: "two")
 
         return [pillOne, pillTwo]

@@ -16,7 +16,7 @@
 "startSession.button.start.title" = "Inizia";
 "startSession.button.cancel.title" = "Finisci";
 "startSession.label.name.title" = "Nome dalla pillola";
-"startSession.label.ammount.title" = "Numero di pillole da prendere ogni volta";
+"startSession.label.amount.title" = "Numero di pillole da prendere ogni volta";
 "startSession.button.save.title" = "Salva";
 
 "history.button.close.title" = "Chiudi";
